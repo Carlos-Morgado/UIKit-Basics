@@ -36,47 +36,61 @@ class HomeViewController: UIViewController {
     }
     
     // OUTLETS
+    
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var uiKitLogo: UIImageView!
     @IBOutlet weak var mainTitle: UILabel!
+    @IBOutlet weak var mainTitleView: UIView!
     @IBOutlet weak var mainSubtitle: UILabel!
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var whatIsUIKitLabel: UILabel!
     @IBOutlet weak var uiKitDefinition: UILabel!
     @IBOutlet weak var uikitDefinition2: UILabel!
     @IBOutlet weak var mockupImage: UIImageView!
+    @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var toAppleDevButton: UIButton!
     @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var lightDarkButton: UISwitch!
+    
     
     // CONSTANTS
-//    private let uiKitList = ["UILabel", "UIButton", "UIImageView", "UITextView", "UISwitch", "UISlider", "UIStepper", "UISegmentedControl", "UIDatePicker", "StackViews", "ScrollViews", "UICollectionView", "UITableView",]
-//    private let othersUIKitList = ["Lotties", "Light/Dark Mode", "Calendar", "Video & Music", "Carrousel Pictures"]
-    private let uiKitList: [MenuItems] = [.uiImage, .uiLabel, .uiButton, .uiTextView, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker]
+    private let uiKitList: [MenuItems] = [.uiLabel, .uiButton, .uiTextView, .uiImage, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker]
     private let othersUIKitList: [MenuItems] = [.lotties, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
-    private let rowHeight: CGFloat = 50
-    private let headerHeight: CGFloat = 25
+    private let rowHeight: CGFloat = 40
+    private let headerHeight: CGFloat = 35
     private let numberOfSections: Int = 2
+    let myBasicBackgroundColor = UIColor(named: "Basic-Background-Color")
+    let myTextColor = UIColor(named: "Text-Color")
+    let myHeaderTableViewColor = UIColor(named: "Headers-TableView-Color")
+    let myCellColor = UIColor(named: "Cells-Color")
     
     // LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // PROPERTIES & CONFIGURATIONS
+        view.backgroundColor = myBasicBackgroundColor
+        containerView.backgroundColor  = .clear
+        
         title = "Home"
         navigationController?.navigationBar.backgroundColor = .lightGray.withAlphaComponent(0.2)
         
+        mainTitleView.backgroundColor = .clear
         uiKitLogo.image = UIImage(named: "uikit-logo-png-transparent")
         mainTitle.text = "UIKit Basics"
         mainTitle.textAlignment = .left
         mainTitle.font = UIFont(name: "SFUIDisplay-Bold", size: 30)
+        mainTitle.textColor = myTextColor
         
         mainSubtitle.text = "Construct and manage a graphical, event-driven user interface for your iOS, iPadOS, or tvOS app."
         mainSubtitle.font = UIFont(name: "SFUIDisplay-Light", size: 18)
+        mainSubtitle.textColor = myTextColor
         mainSubtitle.numberOfLines = 0
         mainSubtitle.setLineSpacing(lineSpacing: 2.5)
         
         myTableView.dataSource = self
         myTableView.delegate = self
-        myTableView.layer.cornerRadius = 10
+        myTableView.layer.cornerRadius = 5
         myTableView.isScrollEnabled = false
         myTableView.sectionHeaderTopPadding = 0.0
         let uikitSectionHeight = (rowHeight * CGFloat(uiKitList.count)) + headerHeight
@@ -85,9 +99,11 @@ class HomeViewController: UIViewController {
         
         whatIsUIKitLabel.text = "What is UIKit?"
         whatIsUIKitLabel.font = UIFont(name: "SFUIDisplay-Bold", size: 25)
+        whatIsUIKitLabel.textColor = myTextColor
         
         uiKitDefinition.text = "UIKit provides a variety of features for building apps, including components you can use to construct the core infrastructure of your iOS, iPadOS, or tvOS apps. The framework provides the window and view architecture for implementing your UI, the event-handling infrastructure for delivering Multi-Touch and other types of input to your app, and the main run loop for managing interactions between the user, the system, and your app."
         uiKitDefinition.font = UIFont(name: "SFUIDisplay-Light", size: 18)
+        uiKitDefinition.textColor = myTextColor
         uiKitDefinition.numberOfLines = 0
         uiKitDefinition.setLineSpacing(lineSpacing: 2.5)
         
@@ -95,16 +111,45 @@ class HomeViewController: UIViewController {
         
         uikitDefinition2.text = "UIKit also includes support for animations, documents, drawing and printing, text management and display, search, app extensions, resource management, and getting information about the current device. You can also customize accessibility support, and localize your app’s interface for different languages, countries, or cultural regions."
         uikitDefinition2.font = UIFont(name: "SFUIDisplay-Light", size: 18)
+        uikitDefinition2.textColor = myTextColor
         uikitDefinition2.numberOfLines = 0
         uikitDefinition2.setLineSpacing(lineSpacing: 2.5)
         
+        buttonView.backgroundColor = .clear
         toAppleDevButton.setTitle("Go to Apple Developer", for: .normal)
         toAppleDevButton.backgroundColor = .systemBlue
         toAppleDevButton.setTitleColor(.white, for: .normal)
         toAppleDevButton.layer.cornerRadius = 19
+        
+    
     }
 
     // ACTIONS
+    
+    @IBAction func lightDarkAction(_ sender: Any) {
+        if lightDarkButton.isOn {
+            let window = UIApplication.shared.keyWindow
+            window?.overrideUserInterfaceStyle = .dark
+        } else {
+            let window = UIApplication.shared.keyWindow
+            window?.overrideUserInterfaceStyle = .light
+        }
+    }
+    
+//    @IBAction func system(_ sender: Any) {
+//            let window = UIApplication.shared.keyWindow
+//            window?.overrideUserInterfaceStyle = .unspecified
+//        }
+//
+//        @IBAction func dunkel(_ sender: Any) {
+//            let window = UIApplication.shared.keyWindow
+//            window?.overrideUserInterfaceStyle = .dark
+//        }
+//
+//        @IBAction func hell(_ sender: Any) {
+//            let window = UIApplication.shared.keyWindow
+//            window?.overrideUserInterfaceStyle = .light
+//        }
     
 }
 
@@ -115,7 +160,7 @@ extension HomeViewController: UITableViewDataSource {
         if section == 0 {
             return "Basics"
         } else {
-            return "more functionalities"
+            return "More functionalities"
         }
     }
     
@@ -125,6 +170,13 @@ extension HomeViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return numberOfSections
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = myTextColor
+        header.contentView.backgroundColor = myHeaderTableViewColor
+        header.textLabel?.font = UIFont(name: "SFUIDisplay-Bold", size: 16)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -144,8 +196,9 @@ extension HomeViewController: UITableViewDataSource {
             var myCell = tableView.dequeueReusableCell(withIdentifier: "myCellIdentifier")
             if myCell == nil {
                 myCell = UITableViewCell(style: .default, reuseIdentifier: "myCellIdentifier")
-                myCell?.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 250/255, alpha: 0.3)
-                myCell?.textLabel?.font = UIFont(name: "SFUIText-Regular", size: 17)
+                myCell?.backgroundColor = myCellColor
+                myCell?.textLabel?.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+                myCell?.textLabel?.textColor = myTextColor
                 myCell?.accessoryType = .disclosureIndicator
             }
             myCell!.textLabel?.text = uiKitList[indexPath.row].rawValue
@@ -154,19 +207,14 @@ extension HomeViewController: UITableViewDataSource {
             var mySecondCell = tableView.dequeueReusableCell(withIdentifier: "mySecondCellIdentifier")
             if mySecondCell == nil {
                 mySecondCell = UITableViewCell(style: .default, reuseIdentifier: "mySecondCellIdentifier")
-                mySecondCell?.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 250/255, alpha: 0.3)
-                mySecondCell?.textLabel?.font = UIFont(name: "SFUIText-Regular", size: 17)
+                mySecondCell?.backgroundColor = myCellColor
+                mySecondCell?.textLabel?.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+                mySecondCell?.textLabel?.textColor = myTextColor
                 mySecondCell?.accessoryType = .disclosureIndicator
             }
             mySecondCell!.textLabel?.text = othersUIKitList[indexPath.row].rawValue
             return mySecondCell!
         }
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
-        let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.textColor = UIColor.blue
-        header.contentView.backgroundColor = .red
     }
     
 }
@@ -213,16 +261,16 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = SegmentedControlViewController()
             case .uiDatePicker:
                 viewController = DatePickerViewController()
-        case .lotties:
-            break
-        case .lightDarkMode:
-            break
-        case .calendar:
-            break
-        case .videoAndMusic:
-            break
-        case .carouselViews:
-            break
+            case .lotties:
+                break
+            case .lightDarkMode:
+                break
+            case .calendar:
+                break
+            case .videoAndMusic:
+                break
+            case .carouselViews:
+                break
         }
         
         guard let viewController else { return }
