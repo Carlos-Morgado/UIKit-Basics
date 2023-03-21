@@ -6,24 +6,7 @@
 //
 
 import UIKit
-
-enum MenuItems: String {
-    case uiLabel = "UILabel"
-    case uiButton = "UIButton"
-    case uiImage = "UIImageView"
-    case uiTextView = "UITextView"
-    case uiSwitch = "UISwitch"
-    case uiSlider = "UISlider"
-    case uiStepper = "UIStepper"
-    case uiSegmentedControl = "UISegmentedControl"
-    case uiDatePicker = "UIDatePicker"
-    case lotties = "Lotties"
-    case lightDarkMode = "Light/Dark Mode"
-    case calendar = "Calendar"
-    case videoAndMusic = "Video & Music"
-    case carouselViews = "Carousel Pictures"
-    
-}
+import SwiftUI
 
 class HomeViewController: UIViewController {
 
@@ -36,22 +19,38 @@ class HomeViewController: UIViewController {
     }
     
     // OUTLETS
-    
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var lightDarkButton: UISegmentedControl!
     @IBOutlet weak var uiKitLogo: UIImageView!
     @IBOutlet weak var mainTitle: UILabel!
     @IBOutlet weak var mainTitleView: UIView!
     @IBOutlet weak var mainSubtitle: UILabel!
     @IBOutlet weak var myTableView: UITableView!
+    @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var whatIsUIKitLabel: UILabel!
     @IBOutlet weak var uiKitDefinition: UILabel!
     @IBOutlet weak var uikitDefinition2: UILabel!
     @IBOutlet weak var mockupImage: UIImageView!
-    @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var toAppleDevButton: UIButton!
-    @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var lightDarkButton: UISwitch!
     
+    // ENUMS
+    enum MenuItems: String {
+        case uiLabel = "UILabel"
+        case uiButton = "UIButton"
+        case uiImage = "UIImageView"
+        case uiTextView = "UITextView"
+        case uiSwitch = "UISwitch"
+        case uiSlider = "UISlider"
+        case uiStepper = "UIStepper"
+        case uiSegmentedControl = "UISegmentedControl"
+        case uiDatePicker = "UIDatePicker"
+        case lotties = "Lotties"
+        case lightDarkMode = "Light/Dark Mode"
+        case calendar = "Calendar"
+        case videoAndMusic = "Video & Music"
+        case carouselViews = "Carousel Pictures"
+        
+    }
     
     // CONSTANTS
     private let uiKitList: [MenuItems] = [.uiLabel, .uiButton, .uiTextView, .uiImage, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker]
@@ -59,32 +58,40 @@ class HomeViewController: UIViewController {
     private let rowHeight: CGFloat = 40
     private let headerHeight: CGFloat = 35
     private let numberOfSections: Int = 2
-    let myBasicBackgroundColor = UIColor(named: "Basic-Background-Color")
-    let myTextColor = UIColor(named: "Text-Color")
-    let myHeaderTableViewColor = UIColor(named: "Headers-TableView-Color")
-    let myCellColor = UIColor(named: "Cells-Color")
+    
+    
+ 
+    
     
     // LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // PROPERTIES & CONFIGURATIONS
-        view.backgroundColor = myBasicBackgroundColor
-        containerView.backgroundColor  = .clear
-        
         title = "Home"
         navigationController?.navigationBar.backgroundColor = .lightGray.withAlphaComponent(0.2)
+        
+        view.backgroundColor = .myBasicBackgroundColor
+        containerView.backgroundColor  = .clear
+        
+        lightDarkButton.setTitle("Light", forSegmentAt: 0)
+        lightDarkButton.setTitle("Dark", forSegmentAt: 1)
+        lightDarkButton.selectedSegmentTintColor = .systemBlue
+        lightDarkButton.backgroundColor = .clear
+        lightDarkButton.layer.borderColor = UIColor.systemBlue.cgColor
+        lightDarkButton.layer.borderWidth = 1.0
+        lightDarkButton.layer.cornerRadius = 15.0
         
         mainTitleView.backgroundColor = .clear
         uiKitLogo.image = UIImage(named: "uikit-logo-png-transparent")
         mainTitle.text = "UIKit Basics"
         mainTitle.textAlignment = .left
         mainTitle.font = UIFont(name: "SFUIDisplay-Bold", size: 30)
-        mainTitle.textColor = myTextColor
+        mainTitle.textColor = .myTextColor
         
         mainSubtitle.text = "Construct and manage a graphical, event-driven user interface for your iOS, iPadOS, or tvOS app."
         mainSubtitle.font = UIFont(name: "SFUIDisplay-Light", size: 18)
-        mainSubtitle.textColor = myTextColor
+        mainSubtitle.textColor = .myTextColor
         mainSubtitle.numberOfLines = 0
         mainSubtitle.setLineSpacing(lineSpacing: 2.5)
         
@@ -99,11 +106,11 @@ class HomeViewController: UIViewController {
         
         whatIsUIKitLabel.text = "What is UIKit?"
         whatIsUIKitLabel.font = UIFont(name: "SFUIDisplay-Bold", size: 25)
-        whatIsUIKitLabel.textColor = myTextColor
+        whatIsUIKitLabel.textColor = .myTextColor
         
         uiKitDefinition.text = "UIKit provides a variety of features for building apps, including components you can use to construct the core infrastructure of your iOS, iPadOS, or tvOS apps. The framework provides the window and view architecture for implementing your UI, the event-handling infrastructure for delivering Multi-Touch and other types of input to your app, and the main run loop for managing interactions between the user, the system, and your app."
         uiKitDefinition.font = UIFont(name: "SFUIDisplay-Light", size: 18)
-        uiKitDefinition.textColor = myTextColor
+        uiKitDefinition.textColor = .myTextColor
         uiKitDefinition.numberOfLines = 0
         uiKitDefinition.setLineSpacing(lineSpacing: 2.5)
         
@@ -111,45 +118,27 @@ class HomeViewController: UIViewController {
         
         uikitDefinition2.text = "UIKit also includes support for animations, documents, drawing and printing, text management and display, search, app extensions, resource management, and getting information about the current device. You can also customize accessibility support, and localize your app’s interface for different languages, countries, or cultural regions."
         uikitDefinition2.font = UIFont(name: "SFUIDisplay-Light", size: 18)
-        uikitDefinition2.textColor = myTextColor
+        uikitDefinition2.textColor = .myTextColor
         uikitDefinition2.numberOfLines = 0
         uikitDefinition2.setLineSpacing(lineSpacing: 2.5)
         
-        buttonView.backgroundColor = .clear
         toAppleDevButton.setTitle("Go to Apple Developer", for: .normal)
         toAppleDevButton.backgroundColor = .systemBlue
         toAppleDevButton.setTitleColor(.white, for: .normal)
-        toAppleDevButton.layer.cornerRadius = 19
-        
+        toAppleDevButton.layer.cornerRadius = 17
     
     }
 
     // ACTIONS
-    
-    @IBAction func lightDarkAction(_ sender: Any) {
-        if lightDarkButton.isOn {
-            let window = UIApplication.shared.keyWindow
-            window?.overrideUserInterfaceStyle = .dark
-        } else {
+    @IBAction func lightDarkButtonAction(_ sender: Any) {
+        if lightDarkButton.selectedSegmentIndex == 0 {
             let window = UIApplication.shared.keyWindow
             window?.overrideUserInterfaceStyle = .light
+        } else if lightDarkButton.selectedSegmentIndex == 1 {
+            let window = UIApplication.shared.keyWindow
+            window?.overrideUserInterfaceStyle = .dark
         }
     }
-    
-//    @IBAction func system(_ sender: Any) {
-//            let window = UIApplication.shared.keyWindow
-//            window?.overrideUserInterfaceStyle = .unspecified
-//        }
-//
-//        @IBAction func dunkel(_ sender: Any) {
-//            let window = UIApplication.shared.keyWindow
-//            window?.overrideUserInterfaceStyle = .dark
-//        }
-//
-//        @IBAction func hell(_ sender: Any) {
-//            let window = UIApplication.shared.keyWindow
-//            window?.overrideUserInterfaceStyle = .light
-//        }
     
 }
 
@@ -174,8 +163,8 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
         let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.textColor = myTextColor
-        header.contentView.backgroundColor = myHeaderTableViewColor
+        header.textLabel?.textColor = .myTextColor
+        header.contentView.backgroundColor = .myHeaderTableViewColor
         header.textLabel?.font = UIFont(name: "SFUIDisplay-Bold", size: 16)
     }
     
@@ -196,9 +185,9 @@ extension HomeViewController: UITableViewDataSource {
             var myCell = tableView.dequeueReusableCell(withIdentifier: "myCellIdentifier")
             if myCell == nil {
                 myCell = UITableViewCell(style: .default, reuseIdentifier: "myCellIdentifier")
-                myCell?.backgroundColor = myCellColor
+                myCell?.backgroundColor = .myCellColor
                 myCell?.textLabel?.font = UIFont(name: "SFUIDisplay-Light", size: 16)
-                myCell?.textLabel?.textColor = myTextColor
+                myCell?.textLabel?.textColor = .myTextColor
                 myCell?.accessoryType = .disclosureIndicator
             }
             myCell!.textLabel?.text = uiKitList[indexPath.row].rawValue
@@ -207,9 +196,9 @@ extension HomeViewController: UITableViewDataSource {
             var mySecondCell = tableView.dequeueReusableCell(withIdentifier: "mySecondCellIdentifier")
             if mySecondCell == nil {
                 mySecondCell = UITableViewCell(style: .default, reuseIdentifier: "mySecondCellIdentifier")
-                mySecondCell?.backgroundColor = myCellColor
+                mySecondCell?.backgroundColor = .myCellColor
                 mySecondCell?.textLabel?.font = UIFont(name: "SFUIDisplay-Light", size: 16)
-                mySecondCell?.textLabel?.textColor = myTextColor
+                mySecondCell?.textLabel?.textColor = .myTextColor
                 mySecondCell?.accessoryType = .disclosureIndicator
             }
             mySecondCell!.textLabel?.text = othersUIKitList[indexPath.row].rawValue
@@ -222,13 +211,7 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.row == 0 {
-//            navigationController?.pushViewController(LabelsViewController(), animated: true)
-//        } else if indexPath.row == 1 {
-//            navigationController?.pushViewController(ButtonsViewController(), animated: true)
-//        } else if indexPath.row == 2 {
-//            navigationController?.pushViewController(ImageViewController(), animated: true)
-//        }
+
         
         var rowItem: MenuItems? = nil
         
@@ -262,6 +245,7 @@ extension HomeViewController: UITableViewDelegate {
             case .uiDatePicker:
                 viewController = DatePickerViewController()
             case .lotties:
+                viewController = UIHostingController(rootView: SwiftUIView())
                 break
             case .lightDarkMode:
                 break
@@ -278,6 +262,7 @@ extension HomeViewController: UITableViewDelegate {
         
         print(uiKitList[indexPath.row])
     }
+    
 }
 
 

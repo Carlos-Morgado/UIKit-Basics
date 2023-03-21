@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		C41F1C8729B75CBE00DA50E3 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */; };
 		C41F1C8829B75CBE00DA50E3 /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */; };
-		C428D7D729BB5C9A00BA2B83 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428D7D629BB5C9A00BA2B83 /* CustomButton.swift */; };
-		C428D7D929BB5CC300BA2B83 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = C428D7D829BB5CC300BA2B83 /* CustomButton.xib */; };
 		C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D3D4629AF550400964CC8 /* LabelsViewController.swift */; };
 		C42D3D4929AF550400964CC8 /* LabelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42D3D4729AF550400964CC8 /* LabelsViewController.xib */; };
 		C4415E7829B4A8D100303DDD /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4415E7629B4A8D100303DDD /* ImageViewController.swift */; };
@@ -21,7 +19,8 @@
 		C4415E8129B4B5B900303DDD /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4415E7F29B4B5B900303DDD /* SliderViewController.xib */; };
 		C447AC0529B220B100D84B37 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447AC0329B220B100D84B37 /* TextViewController.swift */; };
 		C447AC0629B220B100D84B37 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C447AC0429B220B100D84B37 /* TextViewController.xib */; };
-		C44AD47429C0B8CB00AC1210 /* Color-Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD47329C0B8CB00AC1210 /* Color-Settings.swift */; };
+		C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */; };
+		C4697D4829C6475D009DA79A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4697D4729C6475D009DA79A /* SwiftUIView.swift */; };
 		C4B75DEA29B4BD3C00DCCD3F /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */; };
 		C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */; };
 		C4B75DEE29B4BEAF00DCCD3F /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */; };
@@ -56,8 +55,6 @@
 /* Begin PBXFileReference section */
 		C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
-		C428D7D629BB5C9A00BA2B83 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		C428D7D829BB5CC300BA2B83 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		C42D3D4629AF550400964CC8 /* LabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsViewController.swift; sourceTree = "<group>"; };
 		C42D3D4729AF550400964CC8 /* LabelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelsViewController.xib; sourceTree = "<group>"; };
 		C4415E7629B4A8D100303DDD /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +65,8 @@
 		C4415E7F29B4B5B900303DDD /* SliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
 		C447AC0329B220B100D84B37 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		C447AC0429B220B100D84B37 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
-		C44AD47329C0B8CB00AC1210 /* Color-Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Settings.swift"; sourceTree = "<group>"; };
+		C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Settings.swift"; sourceTree = "<group>"; };
+		C4697D4729C6475D009DA79A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
 		C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StepperViewController.xib; path = ../Controller/StepperViewController.xib; sourceTree = "<group>"; };
 		C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				C4E7A93229BA2A12001C39E7 /* UILabell+LineSpacing.swift */,
-				C44AD47329C0B8CB00AC1210 /* Color-Settings.swift */,
+				C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,8 +194,7 @@
 				C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */,
 				C4B75DF029B4C22300DCCD3F /* DatePickerViewController.swift */,
 				C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */,
-				C428D7D629BB5C9A00BA2B83 /* CustomButton.swift */,
-				C428D7D829BB5CC300BA2B83 /* CustomButton.xib */,
+				C4697D4729C6475D009DA79A /* SwiftUIView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,7 +296,6 @@
 				C4C48A0929B6047F0045874B /* SF-Compact-Text-MediumItalic.otf in Resources */,
 				C4C48A0529B6047F0045874B /* SF-UI-Text-MediumItalic.otf in Resources */,
 				C4C489FF29B6047F0045874B /* SF-UI-Display-Bold.otf in Resources */,
-				C428D7D929BB5CC300BA2B83 /* CustomButton.xib in Resources */,
 				C4B75DEF29B4BEAF00DCCD3F /* SegmentedControlViewController.xib in Resources */,
 				C4F75B2E29AFA2F90019EFB0 /* ButtonsViewController.xib in Resources */,
 				C4F136CF29ADF2550020385C /* LaunchScreen.storyboard in Resources */,
@@ -336,12 +332,12 @@
 			files = (
 				C447AC0529B220B100D84B37 /* TextViewController.swift in Sources */,
 				C4F75B2D29AFA2F90019EFB0 /* ButtonsViewController.swift in Sources */,
+				C4697D4829C6475D009DA79A /* SwiftUIView.swift in Sources */,
 				C41F1C8729B75CBE00DA50E3 /* MyCustomTableViewCell.swift in Sources */,
 				C4B75DEE29B4BEAF00DCCD3F /* SegmentedControlViewController.swift in Sources */,
-				C428D7D729BB5C9A00BA2B83 /* CustomButton.swift in Sources */,
 				C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */,
 				C4B75DF229B4C22300DCCD3F /* DatePickerViewController.swift in Sources */,
-				C44AD47429C0B8CB00AC1210 /* Color-Settings.swift in Sources */,
+				C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */,
 				C4F136C329ADF2540020385C /* AppDelegate.swift in Sources */,
 				C4415E7829B4A8D100303DDD /* ImageViewController.swift in Sources */,
 				C4F136E029ADF90D0020385C /* HomeViewController.swift in Sources */,
