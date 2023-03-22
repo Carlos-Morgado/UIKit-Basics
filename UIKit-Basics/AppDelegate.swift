@@ -16,11 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupView()
         return true
     }
-    
-    private func setupView() {                         // Indicamos cual es la primera vista de la app
-        window = UIWindow(frame: UIScreen.main.bounds) // Instanciamos UIWindow para que ocupe toda la pantalla
-        // Instanciamos el controlador y lo almacenamos en una constante
-        window?.rootViewController = UINavigationController(rootViewController: HomeViewController())   // Le decimos a window cuál es el controlador de vista principal
+    // We indicate what is the first view of the app
+    private func setupView() {
+        // We instantiate UIWindow so that it fits the full screen
+        window = UIWindow(frame: UIScreen.main.bounds)
+        // We instantiate the controller and store it in a constant
+        window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
+        // We tell window what is the main view controller
         window?.makeKeyAndVisible()
         
     }

@@ -11,8 +11,8 @@ class ButtonsViewController: UIViewController {
     
     // OUTLETS
 
-    @IBOutlet weak var myFirstButton: UIButton!
-    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak private var myFirstButton: UIButton!
+    @IBOutlet weak private var closeButton: UIButton!
     
     // LIFE CYCLE
     override func viewDidLoad() {

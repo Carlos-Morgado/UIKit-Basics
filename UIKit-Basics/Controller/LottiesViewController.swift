@@ -17,7 +17,7 @@ class LottiesViewController: UIViewController {
         super.viewDidLoad()
         
         // PROPERTIES AND CONFIGURATIONS
-        view.backgroundColor = .myBasicBackgroundColor
+        view.backgroundColor = .basicBackgroundColor
         
         title = "Lotties"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextAction))

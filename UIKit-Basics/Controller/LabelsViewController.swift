@@ -17,7 +17,7 @@ class LabelsViewController: UIViewController {
         super.viewDidLoad()
         
         // PROPERTIES AND CONFIGURATIONS
-        view.backgroundColor = UIColor(named: "Basic-Background-Color")
+        view.backgroundColor = .basicBackgroundColor
         
         title = "UILabel"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextAction))
