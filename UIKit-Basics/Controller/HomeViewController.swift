@@ -59,10 +59,6 @@ class HomeViewController: UIViewController {
     private let headerHeight: CGFloat = 35
     private let numberOfSections: Int = 2
     
-    
- 
-    
-    
     // LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -217,8 +213,10 @@ extension HomeViewController: UITableViewDelegate {
         
         if indexPath.section == 0 {
             rowItem = uiKitList[indexPath.row]
+            print(uiKitList[indexPath.row])
         } else if indexPath.section == 1 {
             rowItem = othersUIKitList[indexPath.row]
+            print(othersUIKitList[indexPath.row])
         }
         
         guard let rowItem else { return }
@@ -245,22 +243,19 @@ extension HomeViewController: UITableViewDelegate {
             case .uiDatePicker:
                 viewController = DatePickerViewController()
             case .lotties:
-                viewController = UIHostingController(rootView: SwiftUIView())
-                break
+                viewController = LottiesViewController()
             case .lightDarkMode:
-                break
+                viewController = LightDarkViewController()
             case .calendar:
-                break
+                viewController = CalendarViewController()
             case .videoAndMusic:
-                break
+                viewController = Video_MusicViewController()
             case .carouselViews:
-                break
+                viewController = CarouselsViewController()
         }
         
         guard let viewController else { return }
         navigationController?.pushViewController(viewController, animated: true)
-        
-        print(uiKitList[indexPath.row])
     }
     
 }

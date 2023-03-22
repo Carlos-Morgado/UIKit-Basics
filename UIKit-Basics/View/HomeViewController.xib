@@ -40,7 +40,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z60-6N-p5s" userLabel="Container View">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="1306.3333333333333"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1312.3333333333333"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHO-rl-lX7" userLabel="Main Title View">
                                     <rect key="frame" x="30" y="40" width="333" height="40"/>
@@ -119,22 +119,44 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <segmentedControl autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C5q-sV-ioF">
-                                    <rect key="frame" x="130" y="1221.3333333333333" width="132" height="26"/>
+                                    <rect key="frame" x="130.66666666666666" y="1221.3333333333333" width="131.99999999999997" height="32"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="25" id="wm3-U2-5qI"/>
+                                        <constraint firstAttribute="width" constant="132" id="TsU-K3-pq4"/>
+                                        <constraint firstAttribute="width" constant="132" id="aa6-jM-3za"/>
                                     </constraints>
                                     <segments>
                                         <segment title="First" width="66"/>
                                         <segment title="Second"/>
                                     </segments>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="TsU-K3-pq4"/>
+                                            <exclude reference="aa6-jM-3za"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="aa6-jM-3za"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="constraints">
+                                            <exclude reference="TsU-K3-pq4"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="TsU-K3-pq4"/>
+                                        </mask>
+                                    </variation>
                                     <connections>
                                         <action selector="lightDarkButtonAction:" destination="-1" eventType="valueChanged" id="j14-b3-vwv"/>
                                     </connections>
                                 </segmentedControl>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkL-26-gI0" userLabel="To AppleDev Button">
-                                    <rect key="frame" x="46.666666666666629" y="1147.3333333333333" width="300" height="34"/>
+                                    <rect key="frame" x="46.666666666666657" y="1147.3333333333333" width="300" height="34"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="700" id="4BK-2z-S9I"/>
+                                        <constraint firstAttribute="width" constant="680" id="4BK-2z-S9I"/>
                                         <constraint firstAttribute="width" constant="300" id="XRD-0J-PcE"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -170,8 +192,8 @@
                                 <constraint firstItem="Wf8-Kf-9WO" firstAttribute="leading" secondItem="Z60-6N-p5s" secondAttribute="leading" constant="30" id="AVH-K7-c8N"/>
                                 <constraint firstAttribute="trailing" secondItem="mHO-rl-lX7" secondAttribute="trailing" constant="30" id="GA1-cp-lNc"/>
                                 <constraint firstItem="RzQ-zN-gfZ" firstAttribute="top" secondItem="Cn4-FD-PJf" secondAttribute="bottom" constant="30" id="HeC-MG-zh7"/>
-                                <constraint firstAttribute="trailing" secondItem="C5q-sV-ioF" secondAttribute="trailing" constant="131" id="ISH-yp-7Zp"/>
                                 <constraint firstItem="pkL-26-gI0" firstAttribute="top" secondItem="jyD-1p-yJu" secondAttribute="bottom" constant="40" id="Ida-JA-TRk"/>
+                                <constraint firstItem="C5q-sV-ioF" firstAttribute="centerX" secondItem="Z60-6N-p5s" secondAttribute="centerX" id="MJS-nR-6BC"/>
                                 <constraint firstAttribute="trailing" secondItem="RzQ-zN-gfZ" secondAttribute="trailing" constant="30" id="NAo-aY-qgr"/>
                                 <constraint firstItem="Cn4-FD-PJf" firstAttribute="leading" secondItem="Z60-6N-p5s" secondAttribute="leading" constant="30" id="Q1z-Ij-pZD"/>
                                 <constraint firstAttribute="trailing" secondItem="Cn4-FD-PJf" secondAttribute="trailing" constant="30" id="QKP-WS-zzP"/>
@@ -179,7 +201,6 @@
                                 <constraint firstItem="jyD-1p-yJu" firstAttribute="leading" secondItem="Z60-6N-p5s" secondAttribute="leading" constant="30" id="ToC-0d-UCU"/>
                                 <constraint firstItem="iEs-2w-56N" firstAttribute="leading" secondItem="Z60-6N-p5s" secondAttribute="leading" constant="30" id="Tw7-ze-LA7"/>
                                 <constraint firstAttribute="trailing" secondItem="Wf8-Kf-9WO" secondAttribute="trailing" constant="30" id="U8R-tf-SGq"/>
-                                <constraint firstItem="C5q-sV-ioF" firstAttribute="leading" secondItem="Z60-6N-p5s" secondAttribute="leading" constant="130" id="WSZ-XF-e9v"/>
                                 <constraint firstAttribute="bottom" secondItem="C5q-sV-ioF" secondAttribute="bottom" constant="60" id="Yfn-YQ-VDe"/>
                                 <constraint firstItem="Cn4-FD-PJf" firstAttribute="top" secondItem="mHO-rl-lX7" secondAttribute="bottom" constant="15" id="au9-b5-Ayw"/>
                                 <constraint firstAttribute="trailing" secondItem="jyD-1p-yJu" secondAttribute="trailing" constant="30" id="bTA-u6-PMH"/>
