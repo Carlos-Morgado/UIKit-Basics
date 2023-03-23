@@ -182,20 +182,12 @@
 				C4F136C229ADF2540020385C /* AppDelegate.swift */,
 				C4F136D829ADF7290020385C /* View */,
 				C4F136D729ADF7210020385C /* Controller */,
-				C4F136D629ADF71A0020385C /* Model */,
 				C4F136DA29ADF7CC0020385C /* Util */,
 				C4C48A0C29B6048C0045874B /* Fonts */,
 				C4F136DB29ADF7E40020385C /* Supporting Files */,
 				C4F136CB29ADF2550020385C /* Assets.xcassets */,
 			);
 			path = "UIKit-Basics";
-			sourceTree = "<group>";
-		};
-		C4F136D629ADF71A0020385C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C4F136D729ADF7210020385C /* Controller */ = {
