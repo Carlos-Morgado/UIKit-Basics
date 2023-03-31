@@ -32,7 +32,7 @@ class ExamplesViewController: UIViewController {
     
     private let labelExample3: UILabel = {
         let atributedText: NSString = "This is the third label example, where we will see some different configurations."
-        let mutableString = NSMutableAttributedString(string: String(atributedText)) // 1
+        let mutableString = NSMutableAttributedString(string: String(atributedText)) 
         
         mutableString.addAttribute(NSAttributedString.Key.underlineStyle, value: 1, range: atributedText.range(of: "This is the"))
         mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFUIDisplay-Light", size: 30) as Any, range: atributedText.range(of: "This is the"))
@@ -82,7 +82,7 @@ class ExamplesViewController: UIViewController {
 
 // HOMEVIEWCONTROLLER:
     // Enlazar botón "Go to App Developer" y animarlo.
-    // Cambiar color gris de las celdas cuando se seleccionan
+    // Cambiar color gris de las celdas de la tableView cuando se seleccionan
 
 // LABELS VIEWCONTROLLER
     // Poner en negrita palabras importantes

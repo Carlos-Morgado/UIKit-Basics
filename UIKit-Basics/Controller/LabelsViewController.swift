@@ -25,15 +25,20 @@ class LabelsViewController: UIViewController {
     @IBOutlet weak private var creatingSecondLabelTitle: UILabel!
     @IBOutlet weak private var creatingSecondLabelIntroduction: UILabel!
     @IBOutlet weak private var secondLabelExampleView: UIImageView!
-    @IBOutlet weak private var codeSecondLabelExampleView: UIImageView!
     @IBOutlet weak private var secondLabelConstraintsExplanation: UILabel!
+    @IBOutlet weak private var codeSecondLabelExampleView: UIImageView!
+    @IBOutlet weak private var secondLabelConstraintsExplanation2: UILabel!
     @IBOutlet weak private var secondLabelFail1ConstraintsView: UIImageView!
     @IBOutlet weak private var secondLabelFail2constraintsView: UIImageView!
     @IBOutlet weak private var secondLabelLinesExplanation: UILabel!
+    @IBOutlet weak var codeSecondLabelLinesView: UIImageView!
+    @IBOutlet weak var secondLabelLinesExplanation2: UILabel!
     @IBOutlet weak private var secondLabelLinesExplanationView: UIImageView!
     @IBOutlet weak private var creatingThirdLabelTitle: UILabel!
     @IBOutlet weak private var creatingThirdLabelIntroduction: UILabel!
     @IBOutlet weak private var thirdLabelExampleView: UIImageView!
+    @IBOutlet weak private var codeThirdLabelExampleView: UIImageView!
+    
     
     // CONSTANTS
 
@@ -102,14 +107,25 @@ private extension LabelsViewController {
         
         secondLabelExampleView.image = UIImage(named: "Second label example screenshot")
         
+        configSecondLabelConstraintsExplanation()
+        
         codeSecondLabelExampleView.backgroundColor = .systemGray6
         
-        configSecondLabelConstraintsExplanation()
+        configSecondLabelConstraintsExplanation2()
         
         secondLabelFail1ConstraintsView.image = UIImage(named: "Second label fail 1 example screenshot")
         secondLabelFail2constraintsView.image = UIImage(named: "Second label fail 2 example screenshot")
         
         configSecondLabelLinesExplanation()
+        
+        codeSecondLabelLinesView.image = UIImage(named: "")
+        codeSecondLabelLinesView.backgroundColor = .systemGray6
+        
+        secondLabelLinesExplanation2.text = "If we add a value 0, it means that we tell our UILabel to use as many lines as needed to display the text (and therefore the '...' disappears, like in the picture below)."
+        secondLabelLinesExplanation2.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        secondLabelLinesExplanation2.textColor = .textColor
+        secondLabelLinesExplanation2.numberOfLines = 0
+        secondLabelLinesExplanation2.setLineSpacing(lineSpacing: 2.5)
         
         secondLabelLinesExplanationView.image = UIImage(named: "Second label example screenshot")
         
@@ -118,6 +134,8 @@ private extension LabelsViewController {
         configCreatingThirdLabelIntroduction()
         
         thirdLabelExampleView.image = UIImage(named: "Third-label-example-screenshot")
+        
+        codeThirdLabelExampleView.backgroundColor = .systemGray6
         
     }
     
@@ -217,8 +235,6 @@ private extension LabelsViewController {
     func configSecondLabelConstraintsExplanation() {
         secondLabelConstraintsExplanation.text = """
         1. With the leading and trailing constraints we can avoid that our UILabel is in a single line and we can't read the whole text, since we need to apply two contraints, leading (left) and trailing (right).
-        
-        In the first image we can see the problem of the UILabel without leading and trailing constraints, and in the second image we can see how the problem is fixed.
         """
         secondLabelConstraintsExplanation.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         secondLabelConstraintsExplanation.textColor = .textColor
@@ -226,8 +242,16 @@ private extension LabelsViewController {
         secondLabelConstraintsExplanation.setLineSpacing(lineSpacing: 2.5)
     }
     
+    func configSecondLabelConstraintsExplanation2() {
+        secondLabelConstraintsExplanation2.text = "In the first image we can see the problem of the UILabel without leading and trailing constraints, and in the second image we can see how the problem is fixed."
+        secondLabelConstraintsExplanation2.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        secondLabelConstraintsExplanation2.textColor = .textColor
+        secondLabelConstraintsExplanation2.numberOfLines = 0
+        secondLabelConstraintsExplanation2.setLineSpacing(lineSpacing: 2.5)
+    }
+    
     func configSecondLabelLinesExplanation() {
-        secondLabelLinesExplanation.text = "2. We have fixed the constraints, but if you see the second picture we still can't read the full text, it is cut off. This can be solved by using the property 'numberOfLines', and we are going to give it a value of 0. By adding numberOfLines = 0, we tell our UILabel to use as many lines as needed to display the text (and therefore the '...' disappears, like in the picture below)."
+        secondLabelLinesExplanation.text = "2. We have fixed the constraints, but if you see the second picture we still can't read the full text, it is cut off. This can be solved by using the property 'numberOfLines':"
         secondLabelLinesExplanation.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         secondLabelLinesExplanation.textColor = .textColor
         secondLabelLinesExplanation.numberOfLines = 0
