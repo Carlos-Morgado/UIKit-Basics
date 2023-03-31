@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41EB87729D2E52D00160416 /* Images+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EB87629D2E52D00160416 /* Images+Settings.swift */; };
 		C41F1C8729B75CBE00DA50E3 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */; };
 		C41F1C8829B75CBE00DA50E3 /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */; };
 		C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D3D4629AF550400964CC8 /* LabelsViewController.swift */; };
@@ -52,6 +53,9 @@
 		C4C48A0A29B6047F0045874B /* SF-Compact-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489FB29B6047F0045874B /* SF-Compact-Text-LightItalic.otf */; };
 		C4C48A0B29B6047F0045874B /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489FC29B6047F0045874B /* SF-Compact-Text-Regular.otf */; };
 		C4E7A93329BA2A12001C39E7 /* UILabell+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7A93229BA2A12001C39E7 /* UILabell+LineSpacing.swift */; };
+		C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CB9C29D17FD00024B84A /* UILabel+Color.swift */; };
+		C4E9CBA029D1F5C10024B84A /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CB9E29D1F5C10024B84A /* ExamplesViewController.swift */; };
+		C4E9CBA129D1F5C10024B84A /* ExamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E9CB9F29D1F5C10024B84A /* ExamplesViewController.xib */; };
 		C4F136C329ADF2540020385C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F136C229ADF2540020385C /* AppDelegate.swift */; };
 		C4F136CC29ADF2550020385C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F136CB29ADF2550020385C /* Assets.xcassets */; };
 		C4F136CF29ADF2550020385C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F136CD29ADF2550020385C /* LaunchScreen.storyboard */; };
@@ -62,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C41EB87629D2E52D00160416 /* Images+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images+Settings.swift"; sourceTree = "<group>"; };
 		C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
 		C42D3D4629AF550400964CC8 /* LabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +112,9 @@
 		C4C489FB29B6047F0045874B /* SF-Compact-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-LightItalic.otf"; sourceTree = "<group>"; };
 		C4C489FC29B6047F0045874B /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
 		C4E7A93229BA2A12001C39E7 /* UILabell+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabell+LineSpacing.swift"; sourceTree = "<group>"; };
+		C4E9CB9C29D17FD00024B84A /* UILabel+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Color.swift"; sourceTree = "<group>"; };
+		C4E9CB9E29D1F5C10024B84A /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
+		C4E9CB9F29D1F5C10024B84A /* ExamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamplesViewController.xib; sourceTree = "<group>"; };
 		C4F136BF29ADF2540020385C /* UKit-Basics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UKit-Basics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F136C229ADF2540020385C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F136CB29ADF2550020385C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,7 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				C4E7A93229BA2A12001C39E7 /* UILabell+LineSpacing.swift */,
+				C4E9CB9C29D17FD00024B84A /* UILabel+Color.swift */,
 				C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */,
+				C41EB87629D2E52D00160416 /* Images+Settings.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +218,7 @@
 				C431930D29C9C42D00C3D764 /* CalendarViewController.swift */,
 				C431930929C9C3DB00C3D764 /* Video&MusicViewController.swift */,
 				C431931129C9C47300C3D764 /* CarouselsViewController.swift */,
+				C4E9CB9E29D1F5C10024B84A /* ExamplesViewController.swift */,
 				C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */,
 			);
 			path = Controller;
@@ -232,6 +243,7 @@
 				C431930E29C9C42D00C3D764 /* CalendarViewController.xib */,
 				C431930A29C9C3DB00C3D764 /* Video&MusicViewController.xib */,
 				C431931229C9C47300C3D764 /* CarouselsViewController.xib */,
+				C4E9CB9F29D1F5C10024B84A /* ExamplesViewController.xib */,
 				C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */,
 			);
 			path = View;
@@ -322,6 +334,7 @@
 				C4F136CF29ADF2550020385C /* LaunchScreen.storyboard in Resources */,
 				C4415E8129B4B5B900303DDD /* SliderViewController.xib in Resources */,
 				C4415E7D29B4AE2F00303DDD /* SwitchViewController.xib in Resources */,
+				C4E9CBA129D1F5C10024B84A /* ExamplesViewController.xib in Resources */,
 				C4C48A0029B6047F0045874B /* SF-UI-Display-Ultralight.otf in Resources */,
 				C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */,
 				C4F136CC29ADF2550020385C /* Assets.xcassets in Resources */,
@@ -355,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C431930B29C9C3DB00C3D764 /* Video&MusicViewController.swift in Sources */,
+				C4E9CBA029D1F5C10024B84A /* ExamplesViewController.swift in Sources */,
 				C447AC0529B220B100D84B37 /* TextViewController.swift in Sources */,
 				C431930729C9C36300C3D764 /* LightDarkViewController.swift in Sources */,
 				C4F75B2D29AFA2F90019EFB0 /* ButtonsViewController.swift in Sources */,
@@ -364,6 +378,8 @@
 				C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */,
 				C4B75DF229B4C22300DCCD3F /* DatePickerViewController.swift in Sources */,
 				C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */,
+				C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */,
+				C41EB87729D2E52D00160416 /* Images+Settings.swift in Sources */,
 				C4F136C329ADF2540020385C /* AppDelegate.swift in Sources */,
 				C4415E7829B4A8D100303DDD /* ImageViewController.swift in Sources */,
 				C4F136E029ADF90D0020385C /* HomeViewController.swift in Sources */,

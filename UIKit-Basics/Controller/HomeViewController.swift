@@ -49,12 +49,13 @@ class HomeViewController: UIViewController {
         case calendar = "Calendar"
         case videoAndMusic = "Video & Music"
         case carouselViews = "Carousel Pictures"
+        case examples = "Examples"
         
     }
     
     // CONSTANTS
     private let uiKitList: [MenuItems] = [.uiLabel, .uiButton, .uiTextView, .uiImage, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker]
-    private let othersUIKitList: [MenuItems] = [.lotties, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
+    private let othersUIKitList: [MenuItems] = [.lotties, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews, .examples]
     private let rowHeight: CGFloat = 40
     private let headerHeight: CGFloat = 35
     private let numberOfSections: Int = 2
@@ -189,6 +190,8 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = Video_MusicViewController()
             case .carouselViews:
                 viewController = CarouselsViewController()
+            case .examples:
+                viewController = ExamplesViewController()
         }
         
         guard let viewController else { return }
