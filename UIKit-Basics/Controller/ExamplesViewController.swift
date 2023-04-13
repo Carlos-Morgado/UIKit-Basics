@@ -8,7 +8,10 @@
 import UIKit
 
 class ExamplesViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var textView: UITextView!
+    
     private let labelExample1: UILabel = {
         let label = UILabel()
         label.text = "Label example 1"
@@ -32,16 +35,13 @@ class ExamplesViewController: UIViewController {
     
     private let labelExample3: UILabel = {
         let atributedText: NSString = "This is the third label example, where we will see some different configurations."
-        let mutableString = NSMutableAttributedString(string: String(atributedText)) 
+        let mutableString = NSMutableAttributedString(string: String(atributedText))
         
         mutableString.addAttribute(NSAttributedString.Key.underlineStyle, value: 1, range: atributedText.range(of: "This is the"))
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFUIDisplay-Light", size: 30) as Any, range: atributedText.range(of: "This is the"))
         
         mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.systemBlue, range: atributedText.range(of: "third label example,"))
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFUIDisplay-Light", size: 30) as Any, range: atributedText.range(of: "third label example,"))
         
         mutableString.addAttribute(NSAttributedString.Key.backgroundColor, value: UIColor.systemGray3, range: atributedText.range(of: "where we will see"))
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFUIDisplay-Light", size: 30) as Any, range: atributedText.range(of: "where we will see"))
         
         mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFUIText-SemiboldItalic", size: 30) as Any, range: atributedText.range(of: "some different configurations"))
         
@@ -55,7 +55,16 @@ class ExamplesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let attributedText: NSString = "Want to learn iOS? You should visit the best source of free iOS tutorials!"
+        let attributedString = NSMutableAttributedString(string: String (attributedText))
+        attributedString.addAttribute(.link, value: "https://sarunw.com/posts/how-to-add-custom-fonts-to-ios-app/", range: attributedText.range(of: "should visit"))
+        
+        textView.attributedText = attributedString
+        textView.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        textView.textColor = .textColor
+        
+        
         view.addSubview(labelExample1)
         view.addSubview(labelExample2)
         view.addSubview(labelExample3)
@@ -75,6 +84,11 @@ class ExamplesViewController: UIViewController {
             labelExample3.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
         ])
     }
+    
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+            UIApplication.shared.open(URL)
+            return false
+        }
 }
 
 
@@ -83,10 +97,7 @@ class ExamplesViewController: UIViewController {
 // HOMEVIEWCONTROLLER:
     // Enlazar botón "Go to App Developer" y animarlo.
     // Cambiar color gris de las celdas de la tableView cuando se seleccionan
+    // Añadir un tab bar para toda la app
 
 // LABELS VIEWCONTROLLER
-    // Poner en negrita palabras importantes
-    // Personalizar salto de línea
-    // Enlazar "customized font" y que te lleve a una pop view explicando cómo instalar fuentes personalizadas
-    // Meter screenshots de los códigos
     // Ajustar espaciados entre elementos

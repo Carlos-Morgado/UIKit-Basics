@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Code second label example light.png",
+      "filename" : "Code Second Label Lines light.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "Code second label example light 1.png",
+      "filename" : "Code Second Label Lines light 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -23,12 +23,11 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Code second label example dark.png",
+      "filename" : "Code Second Label Lines dark.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Code second label example light 2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -49,12 +48,10 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Code second label example dark 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Code second label example light 3.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -75,7 +72,6 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Code second label example dark 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

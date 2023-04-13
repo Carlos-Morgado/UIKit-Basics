@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C414744F29DAFC6E00224FEC /* appleDeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414744D29DAFC6E00224FEC /* appleDeveloperViewController.swift */; };
+		C414745029DAFC6E00224FEC /* appleDeveloperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C414744E29DAFC6E00224FEC /* appleDeveloperViewController.xib */; };
 		C41EB87729D2E52D00160416 /* Images+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EB87629D2E52D00160416 /* Images+Settings.swift */; };
 		C41F1C8729B75CBE00DA50E3 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */; };
 		C41F1C8829B75CBE00DA50E3 /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */; };
@@ -31,12 +33,16 @@
 		C447AC0529B220B100D84B37 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447AC0329B220B100D84B37 /* TextViewController.swift */; };
 		C447AC0629B220B100D84B37 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C447AC0429B220B100D84B37 /* TextViewController.xib */; };
 		C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */; };
+		C451E2D329DC1CF3008E5897 /* InstallFontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */; };
+		C451E2D429DC1CF3008E5897 /* InstallFontsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */; };
+		C46F5A9C29E5536F00A9F835 /* UITextView+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */; };
 		C4B75DEA29B4BD3C00DCCD3F /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */; };
 		C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */; };
 		C4B75DEE29B4BEAF00DCCD3F /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */; };
 		C4B75DEF29B4BEAF00DCCD3F /* SegmentedControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */; };
 		C4B75DF229B4C22300DCCD3F /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DF029B4C22300DCCD3F /* DatePickerViewController.swift */; };
 		C4B75DF329B4C22300DCCD3F /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DF129B4C22300DCCD3F /* DatePickerViewController.xib */; };
+		C4C4627129DD6BA40050CCB6 /* UITextView+Hyperlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */; };
 		C4C489FD29B6047F0045874B /* SF-Compact-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489EE29B6047E0045874B /* SF-Compact-Text-Semibold.otf */; };
 		C4C489FE29B6047F0045874B /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489EF29B6047E0045874B /* SF-UI-Text-RegularItalic.otf */; };
 		C4C489FF29B6047F0045874B /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489F029B6047E0045874B /* SF-UI-Display-Bold.otf */; };
@@ -52,6 +58,8 @@
 		C4C48A0929B6047F0045874B /* SF-Compact-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489FA29B6047F0045874B /* SF-Compact-Text-MediumItalic.otf */; };
 		C4C48A0A29B6047F0045874B /* SF-Compact-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489FB29B6047F0045874B /* SF-Compact-Text-LightItalic.otf */; };
 		C4C48A0B29B6047F0045874B /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489FC29B6047F0045874B /* SF-Compact-Text-Regular.otf */; };
+		C4E624FA29E45E2400D75B83 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E624F829E45E2400D75B83 /* StackViewController.swift */; };
+		C4E624FB29E45E2400D75B83 /* StackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E624F929E45E2400D75B83 /* StackViewController.xib */; };
 		C4E7A93329BA2A12001C39E7 /* UILabell+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7A93229BA2A12001C39E7 /* UILabell+LineSpacing.swift */; };
 		C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CB9C29D17FD00024B84A /* UILabel+Color.swift */; };
 		C4E9CBA029D1F5C10024B84A /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CB9E29D1F5C10024B84A /* ExamplesViewController.swift */; };
@@ -66,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C414744D29DAFC6E00224FEC /* appleDeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleDeveloperViewController.swift; sourceTree = "<group>"; };
+		C414744E29DAFC6E00224FEC /* appleDeveloperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = appleDeveloperViewController.xib; sourceTree = "<group>"; };
 		C41EB87629D2E52D00160416 /* Images+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images+Settings.swift"; sourceTree = "<group>"; };
 		C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
@@ -90,12 +100,16 @@
 		C447AC0329B220B100D84B37 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		C447AC0429B220B100D84B37 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Settings.swift"; sourceTree = "<group>"; };
+		C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallFontsViewController.swift; sourceTree = "<group>"; };
+		C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallFontsViewController.xib; sourceTree = "<group>"; };
+		C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+LineSpacing.swift"; sourceTree = "<group>"; };
 		C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
 		C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StepperViewController.xib; path = ../Controller/StepperViewController.xib; sourceTree = "<group>"; };
 		C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
 		C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlViewController.xib; sourceTree = "<group>"; };
 		C4B75DF029B4C22300DCCD3F /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		C4B75DF129B4C22300DCCD3F /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Hyperlink.swift"; sourceTree = "<group>"; };
 		C4C489EE29B6047E0045874B /* SF-Compact-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Semibold.otf"; sourceTree = "<group>"; };
 		C4C489EF29B6047E0045874B /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		C4C489F029B6047E0045874B /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
@@ -111,6 +125,8 @@
 		C4C489FA29B6047F0045874B /* SF-Compact-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-MediumItalic.otf"; sourceTree = "<group>"; };
 		C4C489FB29B6047F0045874B /* SF-Compact-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-LightItalic.otf"; sourceTree = "<group>"; };
 		C4C489FC29B6047F0045874B /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
+		C4E624F829E45E2400D75B83 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		C4E624F929E45E2400D75B83 /* StackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StackViewController.xib; sourceTree = "<group>"; };
 		C4E7A93229BA2A12001C39E7 /* UILabell+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabell+LineSpacing.swift"; sourceTree = "<group>"; };
 		C4E9CB9C29D17FD00024B84A /* UILabel+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Color.swift"; sourceTree = "<group>"; };
 		C4E9CB9E29D1F5C10024B84A /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +182,8 @@
 				C4E9CB9C29D17FD00024B84A /* UILabel+Color.swift */,
 				C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */,
 				C41EB87629D2E52D00160416 /* Images+Settings.swift */,
+				C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */,
+				C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,12 +231,15 @@
 				C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */,
 				C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */,
 				C4B75DF029B4C22300DCCD3F /* DatePickerViewController.swift */,
+				C4E624F829E45E2400D75B83 /* StackViewController.swift */,
 				C431930129C9C17B00C3D764 /* LottiesViewController.swift */,
 				C431930529C9C36300C3D764 /* LightDarkViewController.swift */,
 				C431930D29C9C42D00C3D764 /* CalendarViewController.swift */,
 				C431930929C9C3DB00C3D764 /* Video&MusicViewController.swift */,
 				C431931129C9C47300C3D764 /* CarouselsViewController.swift */,
 				C4E9CB9E29D1F5C10024B84A /* ExamplesViewController.swift */,
+				C414744D29DAFC6E00224FEC /* appleDeveloperViewController.swift */,
+				C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */,
 				C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */,
 			);
 			path = Controller;
@@ -238,12 +259,15 @@
 				C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */,
 				C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */,
 				C4B75DF129B4C22300DCCD3F /* DatePickerViewController.xib */,
+				C4E624F929E45E2400D75B83 /* StackViewController.xib */,
 				C431930229C9C17B00C3D764 /* LottiesViewController.xib */,
 				C431930629C9C36300C3D764 /* LightDarkViewController.xib */,
 				C431930E29C9C42D00C3D764 /* CalendarViewController.xib */,
 				C431930A29C9C3DB00C3D764 /* Video&MusicViewController.xib */,
 				C431931229C9C47300C3D764 /* CarouselsViewController.xib */,
 				C4E9CB9F29D1F5C10024B84A /* ExamplesViewController.xib */,
+				C414744E29DAFC6E00224FEC /* appleDeveloperViewController.xib */,
+				C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */,
 				C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */,
 			);
 			path = View;
@@ -333,6 +357,7 @@
 				C4F75B2E29AFA2F90019EFB0 /* ButtonsViewController.xib in Resources */,
 				C4F136CF29ADF2550020385C /* LaunchScreen.storyboard in Resources */,
 				C4415E8129B4B5B900303DDD /* SliderViewController.xib in Resources */,
+				C4E624FB29E45E2400D75B83 /* StackViewController.xib in Resources */,
 				C4415E7D29B4AE2F00303DDD /* SwitchViewController.xib in Resources */,
 				C4E9CBA129D1F5C10024B84A /* ExamplesViewController.xib in Resources */,
 				C4C48A0029B6047F0045874B /* SF-UI-Display-Ultralight.otf in Resources */,
@@ -346,6 +371,7 @@
 				C4C489FE29B6047F0045874B /* SF-UI-Text-RegularItalic.otf in Resources */,
 				C4F136E129ADF90D0020385C /* HomeViewController.xib in Resources */,
 				C431930829C9C36300C3D764 /* LightDarkViewController.xib in Resources */,
+				C451E2D429DC1CF3008E5897 /* InstallFontsViewController.xib in Resources */,
 				C431931429C9C47300C3D764 /* CarouselsViewController.xib in Resources */,
 				C4C48A0329B6047F0045874B /* SF-Compact-Text-Medium.otf in Resources */,
 				C4C48A0229B6047F0045874B /* SF-UI-Display-Light.otf in Resources */,
@@ -355,6 +381,7 @@
 				C4C48A0429B6047F0045874B /* SF-Compact-Display-Heavy.otf in Resources */,
 				C4C48A0629B6047F0045874B /* SF-UI-Display-Black.otf in Resources */,
 				C4C489FD29B6047F0045874B /* SF-Compact-Text-Semibold.otf in Resources */,
+				C414745029DAFC6E00224FEC /* appleDeveloperViewController.xib in Resources */,
 				C41F1C8829B75CBE00DA50E3 /* MyCustomTableViewCell.xib in Resources */,
 				C4C48A0129B6047F0045874B /* SF-UI-Display-Regular.otf in Resources */,
 			);
@@ -371,11 +398,14 @@
 				C4E9CBA029D1F5C10024B84A /* ExamplesViewController.swift in Sources */,
 				C447AC0529B220B100D84B37 /* TextViewController.swift in Sources */,
 				C431930729C9C36300C3D764 /* LightDarkViewController.swift in Sources */,
+				C414744F29DAFC6E00224FEC /* appleDeveloperViewController.swift in Sources */,
 				C4F75B2D29AFA2F90019EFB0 /* ButtonsViewController.swift in Sources */,
+				C451E2D329DC1CF3008E5897 /* InstallFontsViewController.swift in Sources */,
 				C41F1C8729B75CBE00DA50E3 /* MyCustomTableViewCell.swift in Sources */,
 				C4B75DEE29B4BEAF00DCCD3F /* SegmentedControlViewController.swift in Sources */,
 				C431930F29C9C42D00C3D764 /* CalendarViewController.swift in Sources */,
 				C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */,
+				C4C4627129DD6BA40050CCB6 /* UITextView+Hyperlink.swift in Sources */,
 				C4B75DF229B4C22300DCCD3F /* DatePickerViewController.swift in Sources */,
 				C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */,
 				C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */,
@@ -389,6 +419,8 @@
 				C431930329C9C17B00C3D764 /* LottiesViewController.swift in Sources */,
 				C4415E7C29B4AE2F00303DDD /* SwitchViewController.swift in Sources */,
 				C4415E8029B4B5B900303DDD /* SliderViewController.swift in Sources */,
+				C4E624FA29E45E2400D75B83 /* StackViewController.swift in Sources */,
+				C46F5A9C29E5536F00A9F835 /* UITextView+LineSpacing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
