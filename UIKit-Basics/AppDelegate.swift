@@ -24,9 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
         // We tell window what is the main view controller
         window?.makeKeyAndVisible()
-        
+
     }
-
-
 }
 

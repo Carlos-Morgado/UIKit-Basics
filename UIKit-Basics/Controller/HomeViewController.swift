@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     
     // OUTLETS
     @IBOutlet weak private var containerView: UIView!
-    @IBOutlet weak private var lightDarkButton: UISegmentedControl!
+
     @IBOutlet weak private var uiKitLogo: UIImageView!
     @IBOutlet weak private var mainTitle: UILabel!
     @IBOutlet weak private var mainTitleView: UIView!
@@ -32,9 +32,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak private var uikitDefinition2: UILabel!
     @IBOutlet weak private var mockupImage: UIImageView!
     @IBOutlet weak private var toAppleDevButton: UIButton!
+    @IBOutlet weak private var lightDarkButton: UISegmentedControl!
     
     // ENUMS
     enum MenuItems: String {
+        case examples = "Examples"
         case uiLabel = "UILabel"
         case uiButton = "UIButton"
         case uiImage = "UIImageView"
@@ -44,16 +46,23 @@ class HomeViewController: UIViewController {
         case uiStepper = "UIStepper"
         case uiSegmentedControl = "UISegmentedControl"
         case uiDatePicker = "UIDatePicker"
+        case uiStackView = "UIStackView"
         case lotties = "Lotties"
         case lightDarkMode = "Light/Dark Mode"
         case calendar = "Calendar"
         case videoAndMusic = "Video & Music"
         case carouselViews = "Carousel Pictures"
         
+        // webView
+        // mapView
+        // Tab Bar
+        // Search Bar
+       
+        
     }
     
     // CONSTANTS
-    private let uiKitList: [MenuItems] = [.uiLabel, .uiButton, .uiTextView, .uiImage, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker]
+    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker, .uiStackView]
     private let othersUIKitList: [MenuItems] = [.lotties, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
     private let rowHeight: CGFloat = 40
     private let headerHeight: CGFloat = 35
@@ -78,6 +87,7 @@ class HomeViewController: UIViewController {
             window?.overrideUserInterfaceStyle = .dark
         }
     }
+    
 }
 
 // EXTENSIONS
@@ -179,6 +189,8 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = SegmentedControlViewController()
             case .uiDatePicker:
                 viewController = DatePickerViewController()
+            case .uiStackView:
+                viewController = StackViewController()
             case .lotties:
                 viewController = LottiesViewController()
             case .lightDarkMode:
@@ -189,6 +201,9 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = Video_MusicViewController()
             case .carouselViews:
                 viewController = CarouselsViewController()
+            case .examples:
+                viewController = ExamplesViewController()
+        
         }
         
         guard let viewController else { return }
@@ -223,16 +238,7 @@ private extension HomeViewController {
         configLightDarkButton()
         
         configToAppleDevButton()
-    }
-    
-    func configLightDarkButton() {
-        lightDarkButton.setTitle("Light", forSegmentAt: 0)
-        lightDarkButton.setTitle("Dark", forSegmentAt: 1)
-        lightDarkButton.selectedSegmentTintColor = .systemBlue
-        lightDarkButton.backgroundColor = .clear
-        lightDarkButton.layer.borderColor = UIColor.systemBlue.cgColor
-        lightDarkButton.layer.borderWidth = 1.0
-        lightDarkButton.layer.cornerRadius = 15.0
+        
     }
     
     func configMainTitle() {
@@ -285,10 +291,21 @@ private extension HomeViewController {
         uikitDefinition2.setLineSpacing(lineSpacing: 2.5)
     }
     
+    func configLightDarkButton() {
+        lightDarkButton.setTitle("Light", forSegmentAt: 0)
+        lightDarkButton.setTitle("Dark", forSegmentAt: 1)
+        lightDarkButton.selectedSegmentTintColor = .systemBlue
+        lightDarkButton.backgroundColor = .clear
+        lightDarkButton.layer.borderColor = UIColor.systemBlue.cgColor
+        lightDarkButton.layer.borderWidth = 1.0
+        lightDarkButton.layer.cornerRadius = 15.0
+    }
+    
     func configToAppleDevButton() {
         toAppleDevButton.setTitle("Go to Apple Developer", for: .normal)
         toAppleDevButton.backgroundColor = .systemBlue
         toAppleDevButton.setTitleColor(.white, for: .normal)
         toAppleDevButton.layer.cornerRadius = 17
     }
+    
 }
