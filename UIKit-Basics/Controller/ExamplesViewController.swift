@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ExamplesViewController: UIViewController {
+final class ExamplesViewController: UIViewController {
     
     
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak private var textView: UITextView!
     
     private let labelExample1: UILabel = {
         let label = UILabel()
@@ -86,9 +86,9 @@ class ExamplesViewController: UIViewController {
     }
     
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-            UIApplication.shared.open(URL)
-            return false
-        }
+        UIApplication.shared.open(URL)
+        return false
+    }
 }
 
 

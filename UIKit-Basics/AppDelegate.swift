@@ -26,14 +26,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
     }
-    
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        print("Background")
-    }
-    
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        print("Foreground")
-    }
-
 }
 
