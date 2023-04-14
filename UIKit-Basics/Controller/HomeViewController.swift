@@ -79,6 +79,15 @@ class HomeViewController: UIViewController {
     }
 
     // ACTIONS
+    
+    @IBAction func appleDevButtonAction(_ sender: UIButton) {
+        sender.flash()
+        if let url = URL(string: "https://developer.apple.com/") {
+            UIApplication.shared.open(url)
+            
+        }
+    }
+    
     @IBAction func lightDarkButtonAction(_ sender: Any) {
         let window = UIApplication.shared.keyWindow
         if lightDarkButton.selectedSegmentIndex == 0 {
@@ -306,6 +315,9 @@ private extension HomeViewController {
         toAppleDevButton.backgroundColor = .systemBlue
         toAppleDevButton.setTitleColor(.white, for: .normal)
         toAppleDevButton.layer.cornerRadius = 17
+        toAppleDevButton.startAnimatingPressActions()
+       // toAppleDevButton.flash()
+        // toAppleDevButton.pulsate()
     }
     
 }

@@ -35,6 +35,7 @@
 		C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */; };
 		C451E2D329DC1CF3008E5897 /* InstallFontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */; };
 		C451E2D429DC1CF3008E5897 /* InstallFontsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */; };
+		C46B9BCD29E95A9F002592E6 /* UIButton+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46B9BCC29E95A9F002592E6 /* UIButton+Animations.swift */; };
 		C46F5A9C29E5536F00A9F835 /* UITextView+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */; };
 		C4B75DEA29B4BD3C00DCCD3F /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */; };
 		C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */; };
@@ -102,6 +103,7 @@
 		C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Settings.swift"; sourceTree = "<group>"; };
 		C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallFontsViewController.swift; sourceTree = "<group>"; };
 		C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallFontsViewController.xib; sourceTree = "<group>"; };
+		C46B9BCC29E95A9F002592E6 /* UIButton+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Animations.swift"; sourceTree = "<group>"; };
 		C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+LineSpacing.swift"; sourceTree = "<group>"; };
 		C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
 		C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StepperViewController.xib; path = ../Controller/StepperViewController.xib; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				C41EB87629D2E52D00160416 /* Images+Settings.swift */,
 				C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */,
 				C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */,
+				C46B9BCC29E95A9F002592E6 /* UIButton+Animations.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				C431930F29C9C42D00C3D764 /* CalendarViewController.swift in Sources */,
 				C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */,
 				C4C4627129DD6BA40050CCB6 /* UITextView+Hyperlink.swift in Sources */,
+				C46B9BCD29E95A9F002592E6 /* UIButton+Animations.swift in Sources */,
 				C4B75DF229B4C22300DCCD3F /* DatePickerViewController.swift in Sources */,
 				C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */,
 				C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */,
