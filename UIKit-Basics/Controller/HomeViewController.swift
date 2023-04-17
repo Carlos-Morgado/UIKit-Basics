@@ -316,8 +316,6 @@ private extension HomeViewController {
         toAppleDevButton.setTitleColor(.white, for: .normal)
         toAppleDevButton.layer.cornerRadius = 17
         toAppleDevButton.startAnimatingPressActions()
-       // toAppleDevButton.flash()
-        // toAppleDevButton.pulsate()
     }
     
 }
