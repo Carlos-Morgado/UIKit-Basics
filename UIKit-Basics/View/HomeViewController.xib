@@ -184,6 +184,9 @@
                                             <include reference="XRD-0J-PcE"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <action selector="appleDevButtonAction:" destination="-1" eventType="touchUpInside" id="gLL-1e-B6d"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
