@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
     
     // OUTLETS
     @IBOutlet weak private var containerView: UIView!
-
     @IBOutlet weak private var uiKitLogo: UIImageView!
     @IBOutlet weak private var mainTitle: UILabel!
     @IBOutlet weak private var mainTitleView: UIView!
