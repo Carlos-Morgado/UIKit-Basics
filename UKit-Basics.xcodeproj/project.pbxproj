@@ -37,6 +37,18 @@
 		C451E2D429DC1CF3008E5897 /* InstallFontsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */; };
 		C46B9BCD29E95A9F002592E6 /* UIButton+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46B9BCC29E95A9F002592E6 /* UIButton+Animations.swift */; };
 		C46F5A9C29E5536F00A9F835 /* UITextView+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */; };
+		C4988BA929EDA474006A2B5D /* SF-Mono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988B9D29EDA474006A2B5D /* SF-Mono-Bold.otf */; };
+		C4988BAA29EDA474006A2B5D /* SF-Mono-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988B9E29EDA474006A2B5D /* SF-Mono-MediumItalic.otf */; };
+		C4988BAB29EDA474006A2B5D /* SF-Mono-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988B9F29EDA474006A2B5D /* SF-Mono-SemiboldItalic.otf */; };
+		C4988BAC29EDA474006A2B5D /* SF-Mono-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA029EDA474006A2B5D /* SF-Mono-Heavy.otf */; };
+		C4988BAD29EDA474006A2B5D /* SF-Mono-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA129EDA474006A2B5D /* SF-Mono-RegularItalic.otf */; };
+		C4988BAE29EDA474006A2B5D /* SF-Mono-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA229EDA474006A2B5D /* SF-Mono-Light.otf */; };
+		C4988BAF29EDA474006A2B5D /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA329EDA474006A2B5D /* SF-Mono-Regular.otf */; };
+		C4988BB029EDA474006A2B5D /* SF-Mono-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA429EDA474006A2B5D /* SF-Mono-HeavyItalic.otf */; };
+		C4988BB129EDA474006A2B5D /* SF-Mono-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA529EDA474006A2B5D /* SF-Mono-Medium.otf */; };
+		C4988BB229EDA474006A2B5D /* SF-Mono-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA629EDA474006A2B5D /* SF-Mono-Semibold.otf */; };
+		C4988BB329EDA474006A2B5D /* SF-Mono-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA729EDA474006A2B5D /* SF-Mono-LightItalic.otf */; };
+		C4988BB429EDA474006A2B5D /* SF-Mono-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988BA829EDA474006A2B5D /* SF-Mono-BoldItalic.otf */; };
 		C4B75DEA29B4BD3C00DCCD3F /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */; };
 		C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */; };
 		C4B75DEE29B4BEAF00DCCD3F /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */; };
@@ -105,6 +117,18 @@
 		C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallFontsViewController.xib; sourceTree = "<group>"; };
 		C46B9BCC29E95A9F002592E6 /* UIButton+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Animations.swift"; sourceTree = "<group>"; };
 		C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+LineSpacing.swift"; sourceTree = "<group>"; };
+		C4988B9D29EDA474006A2B5D /* SF-Mono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Bold.otf"; sourceTree = "<group>"; };
+		C4988B9E29EDA474006A2B5D /* SF-Mono-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-MediumItalic.otf"; sourceTree = "<group>"; };
+		C4988B9F29EDA474006A2B5D /* SF-Mono-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		C4988BA029EDA474006A2B5D /* SF-Mono-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Heavy.otf"; sourceTree = "<group>"; };
+		C4988BA129EDA474006A2B5D /* SF-Mono-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-RegularItalic.otf"; sourceTree = "<group>"; };
+		C4988BA229EDA474006A2B5D /* SF-Mono-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Light.otf"; sourceTree = "<group>"; };
+		C4988BA329EDA474006A2B5D /* SF-Mono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Regular.otf"; sourceTree = "<group>"; };
+		C4988BA429EDA474006A2B5D /* SF-Mono-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-HeavyItalic.otf"; sourceTree = "<group>"; };
+		C4988BA529EDA474006A2B5D /* SF-Mono-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Medium.otf"; sourceTree = "<group>"; };
+		C4988BA629EDA474006A2B5D /* SF-Mono-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Semibold.otf"; sourceTree = "<group>"; };
+		C4988BA729EDA474006A2B5D /* SF-Mono-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-LightItalic.otf"; sourceTree = "<group>"; };
+		C4988BA829EDA474006A2B5D /* SF-Mono-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-BoldItalic.otf"; sourceTree = "<group>"; };
 		C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
 		C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StepperViewController.xib; path = ../Controller/StepperViewController.xib; sourceTree = "<group>"; };
 		C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +197,18 @@
 				C4C489F829B6047F0045874B /* SF-UI-Text-Regular.otf */,
 				C4C489EF29B6047E0045874B /* SF-UI-Text-RegularItalic.otf */,
 				C4C489F929B6047F0045874B /* SF-UI-Text-SemiboldItalic.otf */,
+				C4988B9D29EDA474006A2B5D /* SF-Mono-Bold.otf */,
+				C4988BA829EDA474006A2B5D /* SF-Mono-BoldItalic.otf */,
+				C4988BA029EDA474006A2B5D /* SF-Mono-Heavy.otf */,
+				C4988BA429EDA474006A2B5D /* SF-Mono-HeavyItalic.otf */,
+				C4988BA229EDA474006A2B5D /* SF-Mono-Light.otf */,
+				C4988BA729EDA474006A2B5D /* SF-Mono-LightItalic.otf */,
+				C4988BA529EDA474006A2B5D /* SF-Mono-Medium.otf */,
+				C4988B9E29EDA474006A2B5D /* SF-Mono-MediumItalic.otf */,
+				C4988BA329EDA474006A2B5D /* SF-Mono-Regular.otf */,
+				C4988BA129EDA474006A2B5D /* SF-Mono-RegularItalic.otf */,
+				C4988BA629EDA474006A2B5D /* SF-Mono-Semibold.otf */,
+				C4988B9F29EDA474006A2B5D /* SF-Mono-SemiboldItalic.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -351,7 +387,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C431930C29C9C3DB00C3D764 /* Video&MusicViewController.xib in Resources */,
+				C4988BB429EDA474006A2B5D /* SF-Mono-BoldItalic.otf in Resources */,
 				C4B75DF329B4C22300DCCD3F /* DatePickerViewController.xib in Resources */,
+				C4988BB129EDA474006A2B5D /* SF-Mono-Medium.otf in Resources */,
+				C4988BAB29EDA474006A2B5D /* SF-Mono-SemiboldItalic.otf in Resources */,
+				C4988BAE29EDA474006A2B5D /* SF-Mono-Light.otf in Resources */,
 				C4C48A0929B6047F0045874B /* SF-Compact-Text-MediumItalic.otf in Resources */,
 				C4C48A0529B6047F0045874B /* SF-UI-Text-MediumItalic.otf in Resources */,
 				C431931029C9C42D00C3D764 /* CalendarViewController.xib in Resources */,
@@ -360,18 +400,22 @@
 				C4F75B2E29AFA2F90019EFB0 /* ButtonsViewController.xib in Resources */,
 				C4F136CF29ADF2550020385C /* LaunchScreen.storyboard in Resources */,
 				C4415E8129B4B5B900303DDD /* SliderViewController.xib in Resources */,
+				C4988BAC29EDA474006A2B5D /* SF-Mono-Heavy.otf in Resources */,
 				C4E624FB29E45E2400D75B83 /* StackViewController.xib in Resources */,
 				C4415E7D29B4AE2F00303DDD /* SwitchViewController.xib in Resources */,
 				C4E9CBA129D1F5C10024B84A /* ExamplesViewController.xib in Resources */,
 				C4C48A0029B6047F0045874B /* SF-UI-Display-Ultralight.otf in Resources */,
 				C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */,
 				C4F136CC29ADF2550020385C /* Assets.xcassets in Resources */,
+				C4988BA929EDA474006A2B5D /* SF-Mono-Bold.otf in Resources */,
 				C4C48A0A29B6047F0045874B /* SF-Compact-Text-LightItalic.otf in Resources */,
 				C4C48A0729B6047F0045874B /* SF-UI-Text-Regular.otf in Resources */,
 				C4C48A0829B6047F0045874B /* SF-UI-Text-SemiboldItalic.otf in Resources */,
 				C447AC0629B220B100D84B37 /* TextViewController.xib in Resources */,
+				C4988BAA29EDA474006A2B5D /* SF-Mono-MediumItalic.otf in Resources */,
 				C4415E7929B4A8D100303DDD /* ImageViewController.xib in Resources */,
 				C4C489FE29B6047F0045874B /* SF-UI-Text-RegularItalic.otf in Resources */,
+				C4988BB229EDA474006A2B5D /* SF-Mono-Semibold.otf in Resources */,
 				C4F136E129ADF90D0020385C /* HomeViewController.xib in Resources */,
 				C431930829C9C36300C3D764 /* LightDarkViewController.xib in Resources */,
 				C451E2D429DC1CF3008E5897 /* InstallFontsViewController.xib in Resources */,
@@ -380,10 +424,14 @@
 				C4C48A0229B6047F0045874B /* SF-UI-Display-Light.otf in Resources */,
 				C42D3D4929AF550400964CC8 /* LabelsViewController.xib in Resources */,
 				C4C48A0B29B6047F0045874B /* SF-Compact-Text-Regular.otf in Resources */,
+				C4988BB029EDA474006A2B5D /* SF-Mono-HeavyItalic.otf in Resources */,
+				C4988BAD29EDA474006A2B5D /* SF-Mono-RegularItalic.otf in Resources */,
 				C431930429C9C17B00C3D764 /* LottiesViewController.xib in Resources */,
+				C4988BB329EDA474006A2B5D /* SF-Mono-LightItalic.otf in Resources */,
 				C4C48A0429B6047F0045874B /* SF-Compact-Display-Heavy.otf in Resources */,
 				C4C48A0629B6047F0045874B /* SF-UI-Display-Black.otf in Resources */,
 				C4C489FD29B6047F0045874B /* SF-Compact-Text-Semibold.otf in Resources */,
+				C4988BAF29EDA474006A2B5D /* SF-Mono-Regular.otf in Resources */,
 				C414745029DAFC6E00224FEC /* appleDeveloperViewController.xib in Resources */,
 				C41F1C8829B75CBE00DA50E3 /* MyCustomTableViewCell.xib in Resources */,
 				C4C48A0129B6047F0045874B /* SF-UI-Display-Regular.otf in Resources */,

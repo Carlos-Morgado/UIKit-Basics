@@ -12,4 +12,5 @@ extension UIImage {
     static let codeSecondLabelConstraintsSettings = UIImage(named: "code second label constraints settings")
     static let codeSecondLabelLinesSettings = UIImage(named: "Code Second Label Lines settings")
     static let codeThirdLabelSettings = UIImage(named: "Code third label settings")
+    static let codeButtonExampleSettings = UIImage(named: "Code Button Example settings")
 }
