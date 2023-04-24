@@ -9,8 +9,8 @@ import UIKit
 
 final class ExamplesViewController: UIViewController {
     
-    @IBOutlet weak var exampleButton: UIButton!
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak private var exampleButton: UIButton!
+    @IBOutlet weak private var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -179,13 +179,3 @@ final class ExamplesViewController: UIViewController {
 // HOMEVIEWCONTROLLER:
     // Cambiar color gris de las celdas de la tableView cuando se seleccionan
     // Añadir un tab bar para toda la app
-
-
-
-// Creamos un stackview vertical y su outlet, además de las constraints
-// Modificamos las propiedades básicas del stackview
-// Creamos una view normal y su outlet (cellView)
-// Dentro de la cellView metemos dos label: La primera para el número, la segunda para el texto. Hacemos el outlet de cada uno
-// Modificamos las propiedades de numberCell y textCell en funciones externas
-// Creamos un array de las cellViews y lo almacenamos en una constante
-// Recorremos ese array en un bucle for y añadimos las viewCells al stackView
