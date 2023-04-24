@@ -23,6 +23,9 @@ class ButtonsViewController: UIViewController {
     @IBOutlet weak private var codeButtonExample: UIImageView!
     @IBOutlet weak private var footerView: UIView!
     @IBOutlet weak private var moreInfoIn: UITextView!
+    @IBOutlet weak private var stackView: UIStackView!
+    
+    // CONSTANTS
     
     // LIFE CYCLE
     override func viewDidLoad() {
@@ -77,6 +80,14 @@ private extension ButtonsViewController {
         buttonExampleScreenshot.image = UIImage(named: "Button example screenshot")
         
         codeButtonExample.image = .codeButtonExampleSettings
+        
+        configStackView()
+        
+        let labels = [createLabel1(), createLabel2(), createLabel3()]
+        
+        for label in labels {
+            stackView.addArrangedSubview(label)
+        }
         
         footerView.backgroundColor = .cellColor
         
@@ -135,6 +146,70 @@ private extension ButtonsViewController {
         creatingButtonIntroduction.textColor = .textColor
         creatingButtonIntroduction.numberOfLines = 0
         creatingButtonIntroduction.setLineSpacing(lineSpacing: 2.5)
+    }
+    
+    func configStackView() {
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
+        stackView.alignment = .leading
+        stackView.spacing = 15
+    }
+    
+    func createLabel1() -> UILabel {
+        let label1 = UILabel()
+        let attributedText: NSString = """
+        1. We create the button in our xib, and then we link it to the code with an outlet.
+        """
+        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "xib"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "xib"))
+        label1.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        label1.textColor = .textColor
+        label1.attributedText = mutableString
+        label1.numberOfLines = 0
+        label1.setLineSpacing(lineSpacing: 2.5)
+        return label1
+    }
+    
+    func createLabel2() -> UILabel {
+        let label2 = UILabel()
+        let attributedText: NSString = """
+        2. Below the viewDidLoad() we add the button settings, such as the setTitle, backgroundColor, setTitleColor for a normal state, and the cornerRadius.
+        """
+        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "viewDidLoad()"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "viewDidLoad()"))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "setTitle"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "setTitle"))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "backgroundColor"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "backgroundColor"))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "setTitleColor"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "setTitleColor"))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "cornerRadius"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "cornerRadius"))
+        label2.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        label2.textColor = .textColor
+        label2.attributedText = mutableString
+        label2.numberOfLines = 0
+        label2.setLineSpacing(lineSpacing: 2.5)
+        return label2
+    }
+    
+    func createLabel3() -> UILabel {
+        let label3 = UILabel()
+        let attributedText: NSString = """
+        3. Finally we add an @IBAction to give it different actions if we press the button, for example change its color, or link it to navigate to an external website.
+        """
+        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "@IBAction"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "@IBAction"))
+        label3.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        label3.textColor = .textColor
+        label3.attributedText = mutableString
+        label3.numberOfLines = 0
+        label3.setLineSpacing(lineSpacing: 2.5)
+        return label3
     }
     
     func configMoreInfoIn() {

@@ -10,6 +10,7 @@ import UIKit
 final class ExamplesViewController: UIViewController {
     
     @IBOutlet weak var exampleButton: UIButton!
+    @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,17 @@ final class ExamplesViewController: UIViewController {
         exampleButton.backgroundColor = .blue
         exampleButton.setTitleColor(.white, for: .normal)
         exampleButton.layer.cornerRadius = 17
+        
+        let views = [createLabel1(), createLabel2(), createLabel3()]
+        
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
+        stackView.alignment = .leading
+        stackView.spacing = 5
+        
+        for view in views {
+            stackView.addArrangedSubview(view)
+        }
     }
     
     @IBAction func exampleButtonAction(_ sender: Any) {
@@ -26,10 +38,49 @@ final class ExamplesViewController: UIViewController {
         } else {
             exampleButton.backgroundColor = .blue
         }
-
+        
         if let url = URL(string: "https://developer.apple.com/") {
             UIApplication.shared.open(url)
         }
+    }
+    
+    func createLabel1() -> UILabel {
+        let label1 = UILabel()
+        label1.text = "1. UIKit provides a variety of features for building apps, including components you can use to construct the core infrastructure of your iOS, iPadOS, or tvOS apps."
+        label1.font = UIFont(name: "SFUIDisplay-Light", size: 15)
+        label1.textColor = .textColor
+        label1.numberOfLines = 0
+        label1.backgroundColor = .orange
+        label1.setLineSpacing(lineSpacing: 2.5)
+        label1.sizeToFit()
+        label1.layoutIfNeeded()
+        return label1
+    }
+    
+    func createLabel2() -> UILabel {
+        let label2 = UILabel()
+        label2.text = "2. UIKit provides a variety of features for building apps, including components you can use to construct the core infrastructure of your iOS, iPadOS, or tvOS apps. The framework provides the window and view architecture for implementing your UI, the event-handling infrastructure for delivering Multi-Touch and other types of input to your app, and the main run loop for managing interactions between the user, the system, and your app."
+        label2.font = UIFont(name: "SFUIDisplay-Light", size: 15)
+        label2.textColor = .textColor
+        label2.numberOfLines = 0
+        label2.backgroundColor = .orange
+        label2.setLineSpacing(lineSpacing: 2.5)
+        label2.sizeToFit()
+        label2.layoutIfNeeded()
+        return label2
+    }
+    
+    func createLabel3() -> UILabel {
+        let label3 = UILabel()
+        label3.text = "3. UIKit provides a variety of features for building apps, including components you can use to construct the core infrastructure of your iOS, iPadOS, or tvOS apps. The framework provides the window and view architecture for implementing your UI, the event-handling infrastructure for delivering Multi-Touch and other types of input to your app."
+        label3.font = UIFont(name: "SFUIDisplay-Light", size: 15)
+        label3.textColor = .textColor
+        label3.numberOfLines = 0
+        label3.backgroundColor = .orange
+        label3.setLineSpacing(lineSpacing: 2.5)
+        label3.sizeToFit()
+        label3.layoutIfNeeded()
+        return label3
     }
 }
     
@@ -126,9 +177,15 @@ final class ExamplesViewController: UIViewController {
 //MARK: - COSAS PENDIENTES POR HACER
 
 // HOMEVIEWCONTROLLER:
-    // Enlazar botón "Go to App Developer" y animarlo.
     // Cambiar color gris de las celdas de la tableView cuando se seleccionan
     // Añadir un tab bar para toda la app
 
-// LABELS VIEWCONTROLLER
-    // Ajustar espaciados entre elementos
+
+
+// Creamos un stackview vertical y su outlet, además de las constraints
+// Modificamos las propiedades básicas del stackview
+// Creamos una view normal y su outlet (cellView)
+// Dentro de la cellView metemos dos label: La primera para el número, la segunda para el texto. Hacemos el outlet de cada uno
+// Modificamos las propiedades de numberCell y textCell en funciones externas
+// Creamos un array de las cellViews y lo almacenamos en una constante
+// Recorremos ese array en un bucle for y añadimos las viewCells al stackView
