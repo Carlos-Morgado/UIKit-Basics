@@ -38,22 +38,23 @@ class HomeViewController: UIViewController {
         case examples = "Examples"
         case uiLabel = "UILabel"
         case uiButton = "UIButton"
-        case uiImage = "UIImageView"
         case uiTextView = "UITextView"
+        case uiImage = "UIImageView"
+        case uiStackView = "UIStackView"
+        case uiSearchBar = "UISearchBar"
         case uiSwitch = "UISwitch"
         case uiSlider = "UISlider"
         case uiStepper = "UIStepper"
         case uiSegmentedControl = "UISegmentedControl"
         case uiDatePicker = "UIDatePicker"
-        case uiStackView = "UIStackView"
+        case webView = "WebView"
+        case mapView = "MapView"
         case lotties = "Lotties"
         case lightDarkMode = "Light/Dark Mode"
         case calendar = "Calendar"
         case videoAndMusic = "Video & Music"
         case carouselViews = "Carousel Pictures"
-        
-        // webView
-        // mapView
+    
         // Tab Bar
         // Search Bar
        
@@ -61,8 +62,8 @@ class HomeViewController: UIViewController {
     }
     
     // CONSTANTS
-    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker, .uiStackView]
-    private let othersUIKitList: [MenuItems] = [.lotties, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
+    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiStackView, .uiSearchBar, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker]
+    private let othersUIKitList: [MenuItems] = [.webView, .mapView, .lotties, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
     private let rowHeight: CGFloat = 40
     private let headerHeight: CGFloat = 35
     private let numberOfSections: Int = 2
@@ -183,10 +184,14 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = LabelsViewController()
             case .uiButton:
                 viewController = ButtonsViewController()
-            case .uiImage:
-               viewController = ImageViewController()
             case .uiTextView:
                 viewController = TextViewController()
+            case .uiImage:
+               viewController = ImageViewController()
+            case .uiStackView:
+                viewController = StackViewController()
+            case .uiSearchBar:
+                viewController = SearchBarViewController()
             case .uiSwitch:
                 viewController = SwitchViewController()
             case .uiSlider:
@@ -197,8 +202,10 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = SegmentedControlViewController()
             case .uiDatePicker:
                 viewController = DatePickerViewController()
-            case .uiStackView:
-                viewController = StackViewController()
+            case .webView:
+                viewController = WebViewController()
+            case .mapView:
+                viewController = MapViewController()
             case .lotties:
                 viewController = LottiesViewController()
             case .lightDarkMode:
@@ -211,7 +218,6 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = CarouselsViewController()
             case .examples:
                 viewController = ExamplesViewController()
-        
         }
         
         guard let viewController else { return }

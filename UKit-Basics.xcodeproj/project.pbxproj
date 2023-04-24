@@ -24,6 +24,12 @@
 		C431931029C9C42D00C3D764 /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C431930E29C9C42D00C3D764 /* CalendarViewController.xib */; };
 		C431931329C9C47300C3D764 /* CarouselsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431931129C9C47300C3D764 /* CarouselsViewController.swift */; };
 		C431931429C9C47300C3D764 /* CarouselsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C431931229C9C47300C3D764 /* CarouselsViewController.xib */; };
+		C43A3B5229F6BF5C0098F20F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A3B5029F6BF5C0098F20F /* WebViewController.swift */; };
+		C43A3B5329F6BF5C0098F20F /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43A3B5129F6BF5C0098F20F /* WebViewController.xib */; };
+		C43A3B5629F6C24E0098F20F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A3B5429F6C24E0098F20F /* MapViewController.swift */; };
+		C43A3B5729F6C24E0098F20F /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43A3B5529F6C24E0098F20F /* MapViewController.xib */; };
+		C43A3B5A29F6C3E90098F20F /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A3B5829F6C3E90098F20F /* SearchBarViewController.swift */; };
+		C43A3B5B29F6C3E90098F20F /* SearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43A3B5929F6C3E90098F20F /* SearchBarViewController.xib */; };
 		C4415E7829B4A8D100303DDD /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4415E7629B4A8D100303DDD /* ImageViewController.swift */; };
 		C4415E7929B4A8D100303DDD /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4415E7729B4A8D100303DDD /* ImageViewController.xib */; };
 		C4415E7C29B4AE2F00303DDD /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4415E7A29B4AE2F00303DDD /* SwitchViewController.swift */; };
@@ -104,6 +110,12 @@
 		C431930E29C9C42D00C3D764 /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		C431931129C9C47300C3D764 /* CarouselsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselsViewController.swift; sourceTree = "<group>"; };
 		C431931229C9C47300C3D764 /* CarouselsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselsViewController.xib; sourceTree = "<group>"; };
+		C43A3B5029F6BF5C0098F20F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C43A3B5129F6BF5C0098F20F /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		C43A3B5429F6C24E0098F20F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C43A3B5529F6C24E0098F20F /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		C43A3B5829F6C3E90098F20F /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		C43A3B5929F6C3E90098F20F /* SearchBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarViewController.xib; sourceTree = "<group>"; };
 		C4415E7629B4A8D100303DDD /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		C4415E7729B4A8D100303DDD /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		C4415E7A29B4AE2F00303DDD /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
@@ -265,12 +277,14 @@
 				C4F75B2B29AFA2F90019EFB0 /* ButtonsViewController.swift */,
 				C447AC0329B220B100D84B37 /* TextViewController.swift */,
 				C4415E7629B4A8D100303DDD /* ImageViewController.swift */,
+				C4E624F829E45E2400D75B83 /* StackViewController.swift */,
 				C4415E7A29B4AE2F00303DDD /* SwitchViewController.swift */,
 				C4415E7E29B4B5B900303DDD /* SliderViewController.swift */,
 				C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */,
 				C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */,
 				C4B75DF029B4C22300DCCD3F /* DatePickerViewController.swift */,
-				C4E624F829E45E2400D75B83 /* StackViewController.swift */,
+				C43A3B5029F6BF5C0098F20F /* WebViewController.swift */,
+				C43A3B5429F6C24E0098F20F /* MapViewController.swift */,
 				C431930129C9C17B00C3D764 /* LottiesViewController.swift */,
 				C431930529C9C36300C3D764 /* LightDarkViewController.swift */,
 				C431930D29C9C42D00C3D764 /* CalendarViewController.swift */,
@@ -280,6 +294,8 @@
 				C414744D29DAFC6E00224FEC /* appleDeveloperViewController.swift */,
 				C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */,
 				C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */,
+				C43A3B5829F6C3E90098F20F /* SearchBarViewController.swift */,
+				C43A3B5929F6C3E90098F20F /* SearchBarViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,12 +309,14 @@
 				C4F75B2C29AFA2F90019EFB0 /* ButtonsViewController.xib */,
 				C447AC0429B220B100D84B37 /* TextViewController.xib */,
 				C4415E7729B4A8D100303DDD /* ImageViewController.xib */,
+				C4E624F929E45E2400D75B83 /* StackViewController.xib */,
 				C4415E7B29B4AE2F00303DDD /* SwitchViewController.xib */,
 				C4415E7F29B4B5B900303DDD /* SliderViewController.xib */,
 				C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */,
 				C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */,
 				C4B75DF129B4C22300DCCD3F /* DatePickerViewController.xib */,
-				C4E624F929E45E2400D75B83 /* StackViewController.xib */,
+				C43A3B5129F6BF5C0098F20F /* WebViewController.xib */,
+				C43A3B5529F6C24E0098F20F /* MapViewController.xib */,
 				C431930229C9C17B00C3D764 /* LottiesViewController.xib */,
 				C431930629C9C36300C3D764 /* LightDarkViewController.xib */,
 				C431930E29C9C42D00C3D764 /* CalendarViewController.xib */,
@@ -409,6 +427,7 @@
 				C4F136CC29ADF2550020385C /* Assets.xcassets in Resources */,
 				C4988BA929EDA474006A2B5D /* SF-Mono-Bold.otf in Resources */,
 				C4C48A0A29B6047F0045874B /* SF-Compact-Text-LightItalic.otf in Resources */,
+				C43A3B5329F6BF5C0098F20F /* WebViewController.xib in Resources */,
 				C4C48A0729B6047F0045874B /* SF-UI-Text-Regular.otf in Resources */,
 				C4C48A0829B6047F0045874B /* SF-UI-Text-SemiboldItalic.otf in Resources */,
 				C447AC0629B220B100D84B37 /* TextViewController.xib in Resources */,
@@ -425,6 +444,7 @@
 				C42D3D4929AF550400964CC8 /* LabelsViewController.xib in Resources */,
 				C4C48A0B29B6047F0045874B /* SF-Compact-Text-Regular.otf in Resources */,
 				C4988BB029EDA474006A2B5D /* SF-Mono-HeavyItalic.otf in Resources */,
+				C43A3B5729F6C24E0098F20F /* MapViewController.xib in Resources */,
 				C4988BAD29EDA474006A2B5D /* SF-Mono-RegularItalic.otf in Resources */,
 				C431930429C9C17B00C3D764 /* LottiesViewController.xib in Resources */,
 				C4988BB329EDA474006A2B5D /* SF-Mono-LightItalic.otf in Resources */,
@@ -434,6 +454,7 @@
 				C4988BAF29EDA474006A2B5D /* SF-Mono-Regular.otf in Resources */,
 				C414745029DAFC6E00224FEC /* appleDeveloperViewController.xib in Resources */,
 				C41F1C8829B75CBE00DA50E3 /* MyCustomTableViewCell.xib in Resources */,
+				C43A3B5B29F6C3E90098F20F /* SearchBarViewController.xib in Resources */,
 				C4C48A0129B6047F0045874B /* SF-UI-Display-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,9 +476,11 @@
 				C41F1C8729B75CBE00DA50E3 /* MyCustomTableViewCell.swift in Sources */,
 				C4B75DEE29B4BEAF00DCCD3F /* SegmentedControlViewController.swift in Sources */,
 				C431930F29C9C42D00C3D764 /* CalendarViewController.swift in Sources */,
+				C43A3B5A29F6C3E90098F20F /* SearchBarViewController.swift in Sources */,
 				C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */,
 				C4C4627129DD6BA40050CCB6 /* UITextView+Hyperlink.swift in Sources */,
 				C46B9BCD29E95A9F002592E6 /* UIButton+Animations.swift in Sources */,
+				C43A3B5629F6C24E0098F20F /* MapViewController.swift in Sources */,
 				C4B75DF229B4C22300DCCD3F /* DatePickerViewController.swift in Sources */,
 				C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */,
 				C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */,
@@ -465,6 +488,7 @@
 				C4F136C329ADF2540020385C /* AppDelegate.swift in Sources */,
 				C4415E7829B4A8D100303DDD /* ImageViewController.swift in Sources */,
 				C4F136E029ADF90D0020385C /* HomeViewController.swift in Sources */,
+				C43A3B5229F6BF5C0098F20F /* WebViewController.swift in Sources */,
 				C4E7A93329BA2A12001C39E7 /* UILabell+LineSpacing.swift in Sources */,
 				C4B75DEA29B4BD3C00DCCD3F /* StepperViewController.swift in Sources */,
 				C431931329C9C47300C3D764 /* CarouselsViewController.swift in Sources */,
