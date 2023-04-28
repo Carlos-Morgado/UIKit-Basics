@@ -12,6 +12,7 @@
 		C41EB87729D2E52D00160416 /* Images+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EB87629D2E52D00160416 /* Images+Settings.swift */; };
 		C41F1C8729B75CBE00DA50E3 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */; };
 		C41F1C8829B75CBE00DA50E3 /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */; };
+		C424F8DF29F93DE700EE2E8D /* UITextView+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C424F8DE29F93DE700EE2E8D /* UITextView+Placeholder.swift */; };
 		C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D3D4629AF550400964CC8 /* LabelsViewController.swift */; };
 		C42D3D4929AF550400964CC8 /* LabelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42D3D4729AF550400964CC8 /* LabelsViewController.xib */; };
 		C431930329C9C17B00C3D764 /* LottiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431930129C9C17B00C3D764 /* LottiesViewController.swift */; };
@@ -98,6 +99,7 @@
 		C41EB87629D2E52D00160416 /* Images+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images+Settings.swift"; sourceTree = "<group>"; };
 		C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
+		C424F8DE29F93DE700EE2E8D /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
 		C42D3D4629AF550400964CC8 /* LabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsViewController.swift; sourceTree = "<group>"; };
 		C42D3D4729AF550400964CC8 /* LabelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelsViewController.xib; sourceTree = "<group>"; };
 		C431930129C9C17B00C3D764 /* LottiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottiesViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */,
 				C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */,
 				C46B9BCC29E95A9F002592E6 /* UIButton+Animations.swift */,
+				C424F8DE29F93DE700EE2E8D /* UITextView+Placeholder.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				C431930B29C9C3DB00C3D764 /* Video&MusicViewController.swift in Sources */,
 				C4E9CBA029D1F5C10024B84A /* ExamplesViewController.swift in Sources */,
 				C447AC0529B220B100D84B37 /* TextViewController.swift in Sources */,
+				C424F8DF29F93DE700EE2E8D /* UITextView+Placeholder.swift in Sources */,
 				C431930729C9C36300C3D764 /* LightDarkViewController.swift in Sources */,
 				C414744F29DAFC6E00224FEC /* appleDeveloperViewController.swift in Sources */,
 				C4F75B2D29AFA2F90019EFB0 /* ButtonsViewController.swift in Sources */,
