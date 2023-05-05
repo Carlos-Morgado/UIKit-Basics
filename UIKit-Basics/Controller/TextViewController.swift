@@ -36,27 +36,24 @@ class TextViewController: UIViewController {
     @IBOutlet weak private var footerView: UIView!
     @IBOutlet weak private var moreInfoIn: UITextView!
     
-    var placeholderLabel : UILabel!
-    
     // LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // PROPERTIES AND CONFIGURATIONS
         configView()
-        
     }
     
-  // ACTIONS
-   
+    // ACTIONS
+
 }
 
-
-// MARK: - EXTENSIONS
+// MARK: - PRIVATE EXTENSIONS
 
 private extension TextViewController {
-    
     func configView() {
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+        
         view.backgroundColor = .basicBackgroundColor
         contentScrollView.backgroundColor = .basicBackgroundColor
         
@@ -131,7 +128,6 @@ private extension TextViewController {
         footerView.backgroundColor = .cellColor
         
         configMoreInfoIn()
-        
     }
     
     func configUITextViewMainTitle() {
@@ -189,15 +185,6 @@ private extension TextViewController {
     }
     
     func configTextViewExample() {
-//        textViewExample.delegate = self
-//        placeholderLabel = UILabel()
-//        placeholderLabel.text = "Enter some text you want to write..."
-//        placeholderLabel.font = .italicSystemFont(ofSize: (textViewExample.font?.pointSize)!)
-//        placeholderLabel.sizeToFit()
-//        textViewExample.addSubview(placeholderLabel)
-//        placeholderLabel.frame.origin = CGPoint(x: 5, y: (textViewExample.font?.pointSize)! / 2)
-//        placeholderLabel.textColor = .tertiaryLabel
-//        placeholderLabel.isHidden = !textViewExample.text.isEmpty
         textViewExample.text = ""
         textViewExample.addPlaceholder("Write something, whatever you want...", color: .systemGray)
         textViewExample.font = UIFont(name: "SFUIDisplay-Light", size: 16)
@@ -303,6 +290,7 @@ private extension TextViewController {
     }
     
     func configTextFieldExample() {
+        textFieldExample.delegate = self
         textFieldExample.placeholder = "Write something..."
         textFieldExample.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         textFieldExample.textColor = .systemBlue
@@ -312,6 +300,7 @@ private extension TextViewController {
         textFieldExample.layer.borderColor = UIColor.systemGray.cgColor
         textFieldExample.textAlignment = .left
     }
+    
     
     func configStackViewTextFieldExplanation() {
         stackViewTextFieldExplanation.axis = .vertical
@@ -440,29 +429,23 @@ private extension TextViewController {
         moreInfoIn.textContainerInset = UIEdgeInsets(top: 0,left: -5,bottom: 0,right: -5)
         moreInfoIn.textContainer.heightTracksTextView = true
     }
+    
+    @objc func handleTap() {
+        if textFieldExample.isFirstResponder {
+            textFieldExample.resignFirstResponder()
+        }
+    }
 
 }
 
-//extension TextViewController : UITextViewDelegate {
-//
-//    func textViewDidChange(_ textView: UITextView) {
-//        placeholderLabel?.isHidden = !textView.text.isEmpty
-//    }
-//    func textViewDidEndEditing(_ textView: UITextView) {
-//        placeholderLabel?.isHidden = !textView.text.isEmpty
-//    }
-//    func textViewDidBeginEditing(_ textView: UITextView) {
-//        placeholderLabel?.isHidden = true
-//    }
-//}
+// MARK: - UITEXTFIELD DELEGATE EXTENSION
+
+extension TextViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldExample.resignFirstResponder()
+        return true
+    }
+}
 
 
 
-
-
-
-
-// Creating a textView editable, placeholder, teclado, change color
-// Creating a textField, placeholder, teclado, change color
-// Difference between TextView, TexField, and UILabel
-// Footer

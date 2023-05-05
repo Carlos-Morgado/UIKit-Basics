@@ -18,21 +18,15 @@ extension UITextView {
         placeholderLabel.isHidden = !self.text.isEmpty
         placeholderLabel.tag = 100
         self.addSubview(placeholderLabel)
-        
         self.delegate = self
     }
+    
 }
 
 extension UITextView: UITextViewDelegate {
     public func textViewDidChange(_ textView: UITextView) {
         guard let placeholderLabel = self.viewWithTag(100) as? UILabel else { return }
         placeholderLabel.isHidden = !textView.text.isEmpty
-//        if let placeholderLabel = self.viewWithTag(100) as? UILabel {
-//            placeholderLabel.isHidden = !textView.text.isEmpty
-//        } else {
-//           return
-//        }
-        
     }
     
     public func textViewDidBeginEditing(_ textView: UITextView) {
@@ -44,5 +38,6 @@ extension UITextView: UITextViewDelegate {
         guard let placeholderLabel = self.viewWithTag(100) as? UILabel else { return }
         placeholderLabel.isHidden = !textView.text.isEmpty
     }
+    
 }
 
