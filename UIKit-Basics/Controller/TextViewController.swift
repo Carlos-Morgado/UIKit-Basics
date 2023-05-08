@@ -102,11 +102,7 @@ private extension TextViewController {
         
         configTextFieldExample()
         
-        sendButton.setTitle("Send message", for: .normal)
-        sendButton.isEnabled = false
-        sendButton.layer.cornerRadius = 17
-        sendButton.setTitleColor(.systemGray4, for: .normal)
-        sendButton.backgroundColor = .systemGray6
+        configSendButton()
         
         codeTextField.image = .codeTextFieldExampleSettings
         codeTextField.layer.cornerRadius = 5
@@ -308,6 +304,13 @@ private extension TextViewController {
         textFieldExample.textAlignment = .left
     }
     
+    func configSendButton() {
+        sendButton.setTitle("Send message", for: .normal)
+        sendButton.isEnabled = false
+        sendButton.layer.cornerRadius = 17
+        sendButton.setTitleColor(.systemGray4, for: .normal)
+        sendButton.backgroundColor = .systemGray6
+    }
     
     func configStackViewTextFieldExplanation() {
         stackViewTextFieldExplanation.axis = .vertical
@@ -440,6 +443,8 @@ private extension TextViewController {
     @objc func handleTap() {
         if textFieldExample.isFirstResponder {
             textFieldExample.resignFirstResponder()
+        } else if textViewExample.isFirstResponder {
+            textViewExample.resignFirstResponder()
         }
     }
 
@@ -465,6 +470,8 @@ extension TextViewController: UITextFieldDelegate {
         }
     }
 }
+
+
 
 
 
