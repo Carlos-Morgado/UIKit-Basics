@@ -28,6 +28,7 @@ class TextViewController: UIViewController {
     @IBOutlet weak private var creatingTextFieldTitle: UILabel!
     @IBOutlet weak private var creatingTextFieldIntro: UILabel!
     @IBOutlet weak private var textFieldExample: UITextField!
+    @IBOutlet weak private var sendButton: UIButton!
     @IBOutlet weak private var codeTextField: UIImageView!
     @IBOutlet weak private var stackViewTextFieldExplanation: UIStackView!
     @IBOutlet weak private var versusLabel: UILabel!
@@ -100,6 +101,12 @@ private extension TextViewController {
         configCreatingTextFieldIntroduction()
         
         configTextFieldExample()
+        
+        sendButton.setTitle("Send message", for: .normal)
+        sendButton.isEnabled = false
+        sendButton.layer.cornerRadius = 17
+        sendButton.setTitleColor(.systemGray4, for: .normal)
+        sendButton.backgroundColor = .systemGray6
         
         codeTextField.image = .codeTextFieldExampleSettings
         codeTextField.layer.cornerRadius = 5
@@ -444,6 +451,18 @@ extension TextViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textFieldExample.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if textFieldExample.text?.isEmpty == true {
+            sendButton.isEnabled = false
+            sendButton.backgroundColor = .systemGray6
+            sendButton.setTitleColor(.systemGray4, for: .disabled)
+        } else {
+            sendButton.isEnabled = true
+            sendButton.backgroundColor = .systemBlue
+            sendButton.setTitleColor(.white, for: .normal)
+        }
     }
 }
 

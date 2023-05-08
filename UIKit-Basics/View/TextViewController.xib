@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -29,6 +30,7 @@
                 <outlet property="lineSeparator" destination="fD5-WO-IwJ" id="bSl-b0-0KN"/>
                 <outlet property="lineSeparator2" destination="nev-Ca-9iN" id="wBz-aa-rk8"/>
                 <outlet property="moreInfoIn" destination="OSX-x6-UAe" id="FVn-nF-JT9"/>
+                <outlet property="sendButton" destination="7j5-aa-ape" id="UXQ-C0-NFb"/>
                 <outlet property="stackViewTextFieldExplanation" destination="sxN-5Q-bAC" id="uQS-2a-HHS"/>
                 <outlet property="stackViewTextViewExplanation" destination="0Zg-u5-oR4" id="reM-Iw-pj8"/>
                 <outlet property="stackViewVersusExplanation" destination="6aI-BI-M2N" id="GUF-BD-c6Z"/>
@@ -52,7 +54,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRf-vc-1sA" userLabel="General Content Scroll View">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="1935.6666666666667"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="2005.6666666666667"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITExtView main title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXu-Uv-sTR" userLabel="UITextView main title">
                                     <rect key="frame" x="30" y="40" width="333" height="30"/>
@@ -198,8 +200,16 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j5-aa-ape">
+                                    <rect key="frame" x="121.66666666666669" y="1130.3333333333333" width="150" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="M0g-Lc-sNt"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                </button>
                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4y-E1-o8s">
-                                    <rect key="frame" x="30" y="1135.3333333333333" width="333" height="300"/>
+                                    <rect key="frame" x="30" y="1205.3333333333333" width="333" height="300"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5KH-b1-CeF" userLabel="Content View">
                                             <rect key="frame" x="0.0" y="0.0" width="370" height="300"/>
@@ -230,25 +240,25 @@
                                     </constraints>
                                 </scrollView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sxN-5Q-bAC" userLabel="Stack View TextField  explanation">
-                                    <rect key="frame" x="30" y="1465.3333333333333" width="333" height="20"/>
+                                    <rect key="frame" x="30" y="1535.3333333333333" width="333" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" placeholder="YES" id="SSc-67-LQ4"/>
                                     </constraints>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TextField VS TextView VS UILAbel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlL-RK-6mb" userLabel="TextField VS TextView VS UILAbel">
-                                    <rect key="frame" x="30" y="1515.3333333333333" width="333" height="20.333333333333258"/>
+                                    <rect key="frame" x="30" y="1585.3333333333333" width="333" height="20.333333333333258"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-pj-a08" userLabel="TextField VS TextView">
-                                    <rect key="frame" x="30" y="1555.6666666666667" width="333" height="190"/>
+                                    <rect key="frame" x="30" y="1625.6666666666667" width="333" height="190"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="190" id="Ffs-jK-wxw"/>
                                     </constraints>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYG-Dt-lmd" userLabel="Footer View">
-                                    <rect key="frame" x="0.0" y="1845.6666666666667" width="393" height="90"/>
+                                    <rect key="frame" x="0.0" y="1915.6666666666667" width="393" height="90"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OSX-x6-UAe" userLabel="More info in">
                                             <rect key="frame" x="30" y="30" width="333" height="30"/>
@@ -276,7 +286,7 @@
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6aI-BI-M2N" userLabel="Stack View Versus  explanation">
-                                    <rect key="frame" x="30" y="1775.6666666666667" width="333" height="20"/>
+                                    <rect key="frame" x="30" y="1845.6666666666667" width="333" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" placeholder="YES" id="occ-E6-LAc"/>
                                     </constraints>
@@ -285,6 +295,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="aCb-04-cZ5" firstAttribute="leading" secondItem="FRf-vc-1sA" secondAttribute="leading" constant="30" id="0gQ-fL-vy6"/>
+                                <constraint firstItem="u4y-E1-o8s" firstAttribute="top" secondItem="7j5-aa-ape" secondAttribute="bottom" constant="40" id="1uC-Mq-S7r"/>
                                 <constraint firstAttribute="trailing" secondItem="aCb-04-cZ5" secondAttribute="trailing" constant="30" id="1z4-yh-rhV"/>
                                 <constraint firstItem="NlL-RK-6mb" firstAttribute="leading" secondItem="FRf-vc-1sA" secondAttribute="leading" constant="30" id="2bW-ri-ez5"/>
                                 <constraint firstAttribute="trailing" secondItem="dlj-6E-B4m" secondAttribute="trailing" constant="30" id="3DN-IS-bkp"/>
@@ -322,7 +333,6 @@
                                 <constraint firstItem="dlj-6E-B4m" firstAttribute="leading" secondItem="FRf-vc-1sA" secondAttribute="leading" constant="30" id="QKB-gP-8fP"/>
                                 <constraint firstItem="nev-Ca-9iN" firstAttribute="top" secondItem="sL6-p1-TC4" secondAttribute="bottom" constant="20" id="Qo2-jt-Uaj"/>
                                 <constraint firstAttribute="trailing" secondItem="omM-Nq-U3u" secondAttribute="trailing" constant="30" id="SPq-Su-Xgg"/>
-                                <constraint firstItem="u4y-E1-o8s" firstAttribute="top" secondItem="hIc-PJ-wg3" secondAttribute="bottom" constant="30" id="VE3-37-8cN"/>
                                 <constraint firstItem="fD5-WO-IwJ" firstAttribute="top" secondItem="N7D-UI-qgj" secondAttribute="bottom" constant="20" id="WgE-gy-B8L"/>
                                 <constraint firstAttribute="trailing" secondItem="jvs-Kj-aV1" secondAttribute="trailing" constant="30" id="Xfs-YM-CC9"/>
                                 <constraint firstItem="jvs-Kj-aV1" firstAttribute="leading" secondItem="FRf-vc-1sA" secondAttribute="leading" constant="30" id="YdT-8m-huO"/>
@@ -338,6 +348,8 @@
                                 <constraint firstItem="sxN-5Q-bAC" firstAttribute="leading" secondItem="FRf-vc-1sA" secondAttribute="leading" constant="30" id="icS-tY-Oht"/>
                                 <constraint firstItem="0Zg-u5-oR4" firstAttribute="leading" secondItem="FRf-vc-1sA" secondAttribute="leading" constant="30" id="iw6-X8-Oxg"/>
                                 <constraint firstAttribute="trailing" secondItem="r0e-0F-kaV" secondAttribute="trailing" constant="30" id="kS7-GM-SHt"/>
+                                <constraint firstItem="7j5-aa-ape" firstAttribute="centerX" secondItem="FRf-vc-1sA" secondAttribute="centerX" id="lMW-v0-r1a"/>
+                                <constraint firstItem="7j5-aa-ape" firstAttribute="top" secondItem="hIc-PJ-wg3" secondAttribute="bottom" constant="25" id="lVi-9O-Fpi"/>
                                 <constraint firstItem="hIc-PJ-wg3" firstAttribute="top" secondItem="aCb-04-cZ5" secondAttribute="bottom" constant="20" id="mbK-LV-abv"/>
                                 <constraint firstItem="6aI-BI-M2N" firstAttribute="top" secondItem="M1S-pj-a08" secondAttribute="bottom" constant="30" id="pXf-rP-j34"/>
                                 <constraint firstItem="r0e-0F-kaV" firstAttribute="leading" secondItem="FRf-vc-1sA" secondAttribute="leading" constant="30" id="pyR-0X-UVw"/>
