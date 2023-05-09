@@ -10,8 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExamplesViewController" customModule="UKit_Basics" customModuleProvider="target">
             <connections>
-                <outlet property="exampleButton" destination="uge-aH-fbb" id="rCQ-bV-25g"/>
-                <outlet property="stackView" destination="iGN-PV-XfO" id="bih-5X-xUa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,34 +17,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uge-aH-fbb">
-                    <rect key="frame" x="30" y="109" width="333" height="34.333333333333343"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                    <connections>
-                        <action selector="exampleButtonAction:" destination="-1" eventType="touchUpInside" id="PV5-Qf-kGB"/>
-                    </connections>
-                </button>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-PV-XfO">
-                    <rect key="frame" x="30" y="173.33333333333334" width="333" height="100.00000000000003"/>
-                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="100" placeholder="YES" id="JQ0-Fe-USu"/>
-                    </constraints>
-                </stackView>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="iGN-PV-XfO" firstAttribute="top" secondItem="uge-aH-fbb" secondAttribute="bottom" constant="30" id="0fE-kf-FhZ"/>
-                <constraint firstItem="uge-aH-fbb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="2X7-9e-JL6"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iGN-PV-XfO" secondAttribute="trailing" constant="30" id="VOw-FW-glQ"/>
-                <constraint firstItem="iGN-PV-XfO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ydM-eo-3Sc"/>
-                <constraint firstItem="uge-aH-fbb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="ysK-Eh-FHy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uge-aH-fbb" secondAttribute="trailing" constant="30" id="zQM-tB-eam"/>
-            </constraints>
             <point key="canvasLocation" x="73" y="21"/>
         </view>
     </objects>
