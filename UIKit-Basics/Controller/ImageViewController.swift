@@ -18,6 +18,9 @@ class ImageViewController: UIViewController {
     @IBOutlet weak private var declarationTitle: UILabel!
     @IBOutlet weak private var declarationBoxView: UIView!
     @IBOutlet weak private var declarationCode: UILabel!
+    @IBOutlet weak private var creatingImageViewTitle: UILabel!
+    @IBOutlet weak private var creatingImageViewIntroduction: UILabel!
+    @IBOutlet weak private var imageViewExample: UIImageView!
     
     // LIFE CYCLE
     override func viewDidLoad() {
@@ -55,6 +58,14 @@ private extension ImageViewController {
         declarationBoxView.layer.cornerRadius = 17
         
         configDeclarationCode()
+        
+        configCreatingImageViewTitle()
+        
+        configCreatingImageViewIntroduction()
+        
+        configImageViewExample()
+        
+        
     }
     
     func configUIImageViewMainTitle() {
@@ -94,6 +105,37 @@ private extension ImageViewController {
         declarationCode.font = UIFont(name: "SFMono-Regular", size: 13)
         declarationCode.numberOfLines = 0
         declarationCode.attributedText = myMutableString
+    }
+    
+    func configCreatingImageViewTitle() {
+        creatingImageViewTitle.text = "Creating a ImageView"
+        creatingImageViewTitle.textAlignment = .left
+        creatingImageViewTitle.font = UIFont(name: "SFUIDisplay-Bold", size: 24)
+        creatingImageViewTitle.textColor = .textColor
+    }
+    
+    func configCreatingImageViewIntroduction() {
+        creatingImageViewIntroduction.text = "Let's see how to create the UIImageView example below by code through UIKit:"
+        creatingImageViewIntroduction.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        creatingImageViewIntroduction.textColor = .textColor
+        creatingImageViewIntroduction.numberOfLines = 0
+        creatingImageViewIntroduction.setLineSpacing(lineSpacing: 2.5)
+    }
+    
+    func configImageViewExample() {
+        imageViewExample.image = UIImage(systemName: "logo.xbox")
+        imageViewExample.contentMode = .scaleAspectFit
+        imageViewExample.tintColor = .green
+        imageViewExample.backgroundColor = .darkGray
+        imageViewExample.layer.cornerRadius = 15
+        imageViewExample.isUserInteractionEnabled = true
+        imageViewExample.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapImageView)))
+    }
+    
+    @objc func didTapImageView() {
+        if let url = URL(string: "https://www.xbox.com/es-ES") {
+                UIApplication.shared.open(url)
+            }
     }
     
 }
