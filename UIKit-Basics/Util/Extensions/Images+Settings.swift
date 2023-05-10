@@ -15,4 +15,5 @@ extension UIImage {
     static let codeButtonExampleSettings = UIImage(named: "Code Button Example settings")
     static let codeTextViewExampleSettings = UIImage(named: "Code TextView Example settings")
     static let codeTextFieldExampleSettings = UIImage(named: "Code TextField settings")
+    static let codeImageViewExampleSettings = UIImage(named: "Code imageView settings")
 }
