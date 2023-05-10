@@ -21,6 +21,10 @@ class ImageViewController: UIViewController {
     @IBOutlet weak private var creatingImageViewTitle: UILabel!
     @IBOutlet weak private var creatingImageViewIntroduction: UILabel!
     @IBOutlet weak private var imageViewExample: UIImageView!
+    @IBOutlet weak private var codeImageViewExample: UIImageView!
+    @IBOutlet weak private var imageViewExplanation: UIStackView!
+    @IBOutlet weak private var footerView: UIView!
+    @IBOutlet weak private var moreInfoIn: UITextView!
     
     // LIFE CYCLE
     override func viewDidLoad() {
@@ -65,7 +69,20 @@ private extension ImageViewController {
         
         configImageViewExample()
         
+        codeImageViewExample.image = .codeImageViewExampleSettings
         
+        configImageViewExplanation()
+        
+        let imageViewExplanationLabels = [imageViewExplanationLabel1(), imageViewExplanationLabel2(), imageViewExplanationLabel3(), imageViewExplanationLabel4(), imageViewExplanationLabel5()]
+        
+        for label in imageViewExplanationLabels {
+            imageViewExplanation.addArrangedSubview(label)
+        }
+        
+        footerView.backgroundColor = .cellColor
+        
+        configMoreInfoIn()
+
     }
     
     func configUIImageViewMainTitle() {
@@ -138,11 +155,109 @@ private extension ImageViewController {
             }
     }
     
+    func configImageViewExplanation() {
+        imageViewExplanation.axis = .vertical
+        imageViewExplanation.distribution = .fillProportionally
+        imageViewExplanation.alignment = .leading
+        imageViewExplanation.spacing = 15
+    }
+    
+    func imageViewExplanationLabel1() -> UILabel {
+        let label1 = UILabel()
+        let attributedText: NSString = "First of all, before customizing our imageView, we create it in our xib and then we link it to the code with an outlet."
+        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "xib"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "xib"))
+        label1.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        label1.textColor = .textColor
+        label1.attributedText = mutableString
+        label1.numberOfLines = 0
+        label1.setLineSpacing(lineSpacing: 2.5)
+        return label1
+    }
+    
+    func imageViewExplanationLabel2() -> UILabel {
+        let label2 = UILabel()
+        let attributedText: NSString = "1. Now we can customize our imageView. First of all we add an image through the property .image. The image can be of the system itself or an image of our own."
+        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".image"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".image"))
+        
+        label2.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        label2.textColor = .textColor
+        label2.attributedText = mutableString
+        label2.numberOfLines = 0
+        label2.setLineSpacing(lineSpacing: 2.5)
+        return label2
+    }
+    
+    func imageViewExplanationLabel3() -> UILabel {
+        let label3 = UILabel()
+        let attributedText: NSString = "2. The .contentMode property is about how to scale de image inside de imageView, in this case we've selected .scaleAspect to fit. This scale the image to fit the space while maintaining the image’s original aspect ratio."
+        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".contentMode"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".contentMode"))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".scaleAspect"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".scaleAspect"))
+        
+        label3.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        label3.textColor = .textColor
+        label3.attributedText = mutableString
+        label3.numberOfLines = 0
+        label3.setLineSpacing(lineSpacing: 2.5)
+        return label3
+    }
+    
+    func imageViewExplanationLabel4() -> UILabel {
+        let label4 = UILabel()
+        let attributedText: NSString = "3. We can set different properties, such as .tintColor, .backgroundColor, .cornerRadius, and more visual properties. "
+        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".tintColor"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".tintColor"))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".backgroundColor"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".backgroundColor"))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".cornerRadius"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".cornerRadius"))
+        
+        label4.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        label4.textColor = .textColor
+        label4.attributedText = mutableString
+        label4.numberOfLines = 0
+        label4.setLineSpacing(lineSpacing: 2.5)
+        return label4
+    }
+    
+    func imageViewExplanationLabel5() -> UILabel {
+        let label5 = UILabel()
+        let attributedText: NSString = "4. You can also interact with an image. You have to set the .isUserInteractionEnabled property to 'true' so that the user can interact with the image. Don't forget to add the .addGestureRecognizer to attach any gesture you want to the image."
+        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".isUserInteractionEnabled"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".isUserInteractionEnabled"))
+        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".addGestureRecognizer"))
+        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".addGestureRecognizer"))
+        
+        label5.font = UIFont(name: "SFUIDisplay-Light", size: 16)
+        label5.textColor = .textColor
+        label5.attributedText = mutableString
+        label5.numberOfLines = 0
+        label5.setLineSpacing(lineSpacing: 2.5)
+        return label5
+    }
+    
+    func configMoreInfoIn() {
+        moreInfoIn.hyperLink(originalText: "Get more info in Developer >", hyperLink: "Developer", urlString: "https://developer.apple.com/documentation/uikit/uiimageview/")
+        moreInfoIn.isUserInteractionEnabled = true
+        moreInfoIn.isEditable = false
+        moreInfoIn.font = UIFont(name: "SFUIDisplay-Regular", size: 18)
+        moreInfoIn.textAlignment = .center
+        moreInfoIn.backgroundColor = .clear
+        moreInfoIn.textContainerInset = UIEdgeInsets(top: 0,left: -5,bottom: 0,right: -5)
+        moreInfoIn.textContainer.heightTracksTextView = true
+    }
 }
 
-
-
-// Configuración básica de una imagen
-// Touch events
-// Accessibility
-// Animating a sequence of images
