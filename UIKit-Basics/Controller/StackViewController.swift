@@ -41,7 +41,6 @@ class StackViewController: UIViewController {
         super.viewDidLoad()
         
         configView()
-
     }
     
     // ACTIONS
@@ -83,14 +82,6 @@ private extension StackViewController {
         configCreatingStackViewIntro()
         
         configCitiesStackView()
-        
-        configLondonView()
-        
-        configParisView()
-        
-        configRomeView()
-        
-        configSearchButtonView()
         
         codeStackView.image = .codeStackViewSettings
         
@@ -166,9 +157,13 @@ private extension StackViewController {
         citiesStackView.distribution = .fill
         citiesStackView.spacing = 20
         citiesStackView.backgroundColor = .clear
+        configLondonView()
         citiesStackView.addArrangedSubview(londonView)
+        configParisView()
         citiesStackView.addArrangedSubview(parisView)
+        configRomeView()
         citiesStackView.addArrangedSubview(romeView)
+        configSearchButtonView()
         citiesStackView.addArrangedSubview(searchButtonView)
         citiesStackView.isUserInteractionEnabled = true
     }
