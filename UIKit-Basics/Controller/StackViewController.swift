@@ -125,7 +125,7 @@ private extension StackViewController {
         let myMutableString = NSMutableAttributedString(string: String(declarationCodeText))
         
         myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor ?? .black, range: declarationCodeText.range(of: "@MainActor class"))
-
+        
         myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.textColor ?? .black, range: declarationCodeText.range(of: "UIStackView"))
         
         myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.textColor ?? .black, range: declarationCodeText.range(of: ":"))
@@ -229,14 +229,26 @@ private extension StackViewController {
     
     func stackViewExplanationLabel1() -> UILabel {
         let label1 = UILabel()
-        let attributedText: NSString = "First of all, before customizing our stackView, we create it in our xib and then we link it to the code with an outlet."
-        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        let paragraph = "First of all, before customizing our stackView, we create it in our xib and then we link it to the code with an outlet."
+        let mutableParagraph = NSMutableAttributedString(string: paragraph)
         
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: "xib"))
-        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: "xib"))
+        let wordsAndAttributes: [(String, [NSAttributedString.Key: Any])] = [
+            ("xib", [.font: (UIFont(name: "SFMono-Medium", size: 15) as Any),
+                     .foregroundColor: (UIColor.pinkCodeTextColor as Any)])
+        ]
+        
+        for (word, attributes) in wordsAndAttributes {
+            let range = mutableParagraph.mutableString.range(of: word)
+            mutableParagraph.addAttributes(attributes, range: range)
+            //            if let range = paragraph.range(of: word) {
+            //                let nsRange = NSRange(range, in: paragraph)
+            //                mutableString.addAttributes(attributes, range: nsRange)
+            //            }
+        }
+        
         label1.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         label1.textColor = .textColor
-        label1.attributedText = mutableString
+        label1.attributedText = mutableParagraph
         label1.numberOfLines = 0
         label1.setLineSpacing(lineSpacing: 2.5)
         return label1
@@ -244,83 +256,120 @@ private extension StackViewController {
     
     func stackViewExplanationLabel2() -> UILabel {
         let label2 = UILabel()
-        let attributedText: NSString = "1. The .axis property is to set the type of stackView we want, vertical or horizontal."
-        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        let paragraph = "1. The .axis property is to set the type of stackView we want, vertical or horizontal."
+        let mutableParagraph = NSMutableAttributedString(string: paragraph)
         
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".axis"))
-        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".axis"))
+        let wordsAndAttributes: [(String, [NSAttributedString.Key: Any])] = [
+            (".axis", [.font: (UIFont(name: "SFMono-Medium", size: 15) as Any),
+                       .foregroundColor: (UIColor.pinkCodeTextColor as Any)])
+        ]
+        
+        for (word, attributes) in wordsAndAttributes {
+            let range = mutableParagraph.mutableString.range(of: word)
+            mutableParagraph.addAttributes(attributes, range: range)
+        }
         
         label2.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         label2.textColor = .textColor
-        label2.attributedText = mutableString
+        label2.attributedText = mutableParagraph
         label2.numberOfLines = 0
         label2.setLineSpacing(lineSpacing: 2.5)
         return label2
+        
     }
-    
+        
     func stackViewExplanationLabel3() -> UILabel {
         let label3 = UILabel()
-        let attributedText: NSString = "2. To adjust the type of distribution and size of the elements we need the .distribution property, where you can find different options, such as .fill, .fillEqually, .fillProportionaly..."
-        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        let paragraph = "2. To adjust the type of distribution and size of the elements we need the .distribution property, where you can find different options, such as .fill, .fillEqually, .fillProportionaly..."
+        let mutableParagraph = NSMutableAttributedString(string: paragraph)
         
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".distribution"))
-        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".distribution"))
+        let wordsAndAttributes: [(String, [NSAttributedString.Key: Any])] = [
+            (".distribution", [.font: (UIFont(name: "SFMono-Medium", size: 15) as Any),
+                       .foregroundColor: (UIColor.pinkCodeTextColor as Any)])
+        ]
+        
+        for (word, attributes) in wordsAndAttributes {
+            let range = mutableParagraph.mutableString.range(of: word)
+            mutableParagraph.addAttributes(attributes, range: range)
+        }
         
         label3.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         label3.textColor = .textColor
-        label3.attributedText = mutableString
+        label3.attributedText = mutableParagraph
         label3.numberOfLines = 0
         label3.setLineSpacing(lineSpacing: 2.5)
         return label3
     }
-    
+        
     func stackViewExplanationLabel4() -> UILabel {
         let label4 = UILabel()
-        let attributedText: NSString = "3. With .spacing we can adjust the spacing between the different elements of the stackView."
-        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        let paragraph = "3. With .spacing we can adjust the spacing between the different elements of the stackView."
+        let mutableParagraph = NSMutableAttributedString(string: paragraph)
         
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".spacing"))
-        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".spacing"))
+        let wordsAndAttributes: [(String, [NSAttributedString.Key: Any])] = [
+            ("spacing", [.font: (UIFont(name: "SFMono-Medium", size: 15) as Any),
+                       .foregroundColor: (UIColor.pinkCodeTextColor as Any)])
+        ]
         
+        for (word, attributes) in wordsAndAttributes {
+            let range = mutableParagraph.mutableString.range(of: word)
+            mutableParagraph.addAttributes(attributes, range: range)
+        }
+            
         label4.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         label4.textColor = .textColor
-        label4.attributedText = mutableString
+        label4.attributedText = mutableParagraph
         label4.numberOfLines = 0
         label4.setLineSpacing(lineSpacing: 2.5)
         return label4
     }
-    
+        
     func stackViewExplanationLabel5() -> UILabel {
         let label5 = UILabel()
-        let attributedText: NSString = "4. To add the views inside the stackView we need the .addArrangedSubview property."
-        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        let paragraph = "4. To add the views inside the stackView we need the .addArrangedSubview property."
+        let mutableParagraph = NSMutableAttributedString(string: paragraph)
         
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".addArrangedSubview"))
-        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".addArrangedSubview"))
+        let wordsAndAttributes: [(String, [NSAttributedString.Key: Any])] = [
+            (".addArrangedSubview", [.font: (UIFont(name: "SFMono-Medium", size: 15) as Any),
+                       .foregroundColor: (UIColor.pinkCodeTextColor as Any)])
+        ]
         
+        for (word, attributes) in wordsAndAttributes {
+            let range = mutableParagraph.mutableString.range(of: word)
+            mutableParagraph.addAttributes(attributes, range: range)
+        }
+            
         label5.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         label5.textColor = .textColor
-        label5.attributedText = mutableString
+        label5.attributedText = mutableParagraph
         label5.numberOfLines = 0
         label5.setLineSpacing(lineSpacing: 2.5)
         return label5
     }
-    
+        
     func stackViewExplanationLabel6() -> UILabel {
         let label6 = UILabel()
-        let attributedText: NSString = "5. If you want to interact with the stackView you need to enable the .isUserInteractionEnabled property."
-        let mutableString = NSMutableAttributedString(string: String(attributedText))
+        let paragraph = "5. If you want to interact with the stackView you need to enable the .isUserInteractionEnabled property."
+        let mutableParagraph = NSMutableAttributedString(string: paragraph)
         
-        mutableString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "SFMono-Medium", size: 15) as Any, range: attributedText.range(of: ".isUserInteractionEnabled"))
-        mutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.pinkCodeTextColor as Any, range: attributedText.range(of: ".isUserInteractionEnabled"))
+        let wordsAndAttributes: [(String, [NSAttributedString.Key: Any])] = [
+            (".isUserInteractionEnabled", [.font: (UIFont(name: "SFMono-Medium", size: 15) as Any),
+                       .foregroundColor: (UIColor.pinkCodeTextColor as Any)])
+        ]
+        
+        for (word, attributes) in wordsAndAttributes {
+            let range = mutableParagraph.mutableString.range(of: word)
+            mutableParagraph.addAttributes(attributes, range: range)
+        }
+        
         label6.font = UIFont(name: "SFUIDisplay-Light", size: 16)
         label6.textColor = .textColor
-        label6.attributedText = mutableString
+        label6.attributedText = mutableParagraph
         label6.numberOfLines = 0
         label6.setLineSpacing(lineSpacing: 2.5)
         return label6
     }
-    
+        
     func configMoreInfoIn() {
         moreInfoIn.hyperLink(originalText: "Get more info in Developer >", hyperLink: "Developer", urlString: "https://developer.apple.com/documentation/uikit/uistackview/")
         moreInfoIn.isUserInteractionEnabled = true
