@@ -60,8 +60,8 @@
 		C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */; };
 		C4B75DEE29B4BEAF00DCCD3F /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */; };
 		C4B75DEF29B4BEAF00DCCD3F /* SegmentedControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */; };
-		C4B75DF229B4C22300DCCD3F /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DF029B4C22300DCCD3F /* DatePickerViewController.swift */; };
-		C4B75DF329B4C22300DCCD3F /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DF129B4C22300DCCD3F /* DatePickerViewController.xib */; };
+		C4B75DF229B4C22300DCCD3F /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DF029B4C22300DCCD3F /* PickerViewController.swift */; };
+		C4B75DF329B4C22300DCCD3F /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DF129B4C22300DCCD3F /* PickerViewController.xib */; };
 		C4C4627129DD6BA40050CCB6 /* UITextView+Hyperlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */; };
 		C4C489FD29B6047F0045874B /* SF-Compact-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489EE29B6047E0045874B /* SF-Compact-Text-Semibold.otf */; };
 		C4C489FE29B6047F0045874B /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489EF29B6047E0045874B /* SF-UI-Text-RegularItalic.otf */; };
@@ -147,8 +147,8 @@
 		C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StepperViewController.xib; path = ../Controller/StepperViewController.xib; sourceTree = "<group>"; };
 		C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
 		C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlViewController.xib; sourceTree = "<group>"; };
-		C4B75DF029B4C22300DCCD3F /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		C4B75DF129B4C22300DCCD3F /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		C4B75DF029B4C22300DCCD3F /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		C4B75DF129B4C22300DCCD3F /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 		C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Hyperlink.swift"; sourceTree = "<group>"; };
 		C4C489EE29B6047E0045874B /* SF-Compact-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Semibold.otf"; sourceTree = "<group>"; };
 		C4C489EF29B6047E0045874B /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
@@ -285,7 +285,7 @@
 				C4415E7E29B4B5B900303DDD /* SliderViewController.swift */,
 				C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */,
 				C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */,
-				C4B75DF029B4C22300DCCD3F /* DatePickerViewController.swift */,
+				C4B75DF029B4C22300DCCD3F /* PickerViewController.swift */,
 				C43A3B5029F6BF5C0098F20F /* WebViewController.swift */,
 				C43A3B5429F6C24E0098F20F /* MapViewController.swift */,
 				C431930129C9C17B00C3D764 /* LottiesViewController.swift */,
@@ -317,7 +317,7 @@
 				C4415E7F29B4B5B900303DDD /* SliderViewController.xib */,
 				C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */,
 				C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */,
-				C4B75DF129B4C22300DCCD3F /* DatePickerViewController.xib */,
+				C4B75DF129B4C22300DCCD3F /* PickerViewController.xib */,
 				C43A3B5129F6BF5C0098F20F /* WebViewController.xib */,
 				C43A3B5529F6C24E0098F20F /* MapViewController.xib */,
 				C431930229C9C17B00C3D764 /* LottiesViewController.xib */,
@@ -409,7 +409,7 @@
 			files = (
 				C431930C29C9C3DB00C3D764 /* Video&MusicViewController.xib in Resources */,
 				C4988BB429EDA474006A2B5D /* SF-Mono-BoldItalic.otf in Resources */,
-				C4B75DF329B4C22300DCCD3F /* DatePickerViewController.xib in Resources */,
+				C4B75DF329B4C22300DCCD3F /* PickerViewController.xib in Resources */,
 				C4988BB129EDA474006A2B5D /* SF-Mono-Medium.otf in Resources */,
 				C4988BAB29EDA474006A2B5D /* SF-Mono-SemiboldItalic.otf in Resources */,
 				C4988BAE29EDA474006A2B5D /* SF-Mono-Light.otf in Resources */,
@@ -485,7 +485,7 @@
 				C4C4627129DD6BA40050CCB6 /* UITextView+Hyperlink.swift in Sources */,
 				C46B9BCD29E95A9F002592E6 /* UIButton+Animations.swift in Sources */,
 				C43A3B5629F6C24E0098F20F /* MapViewController.swift in Sources */,
-				C4B75DF229B4C22300DCCD3F /* DatePickerViewController.swift in Sources */,
+				C4B75DF229B4C22300DCCD3F /* PickerViewController.swift in Sources */,
 				C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */,
 				C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */,
 				C41EB87729D2E52D00160416 /* Images+Settings.swift in Sources */,
