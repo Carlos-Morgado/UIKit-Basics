@@ -46,7 +46,7 @@ class HomeViewController: UIViewController {
         case uiSlider = "UISlider"
         case uiStepper = "UIStepper"
         case uiSegmentedControl = "UISegmentedControl"
-        case uiDatePicker = "UIDatePicker"
+        case uiPickerView = "UIPickerView"
         case webView = "WebView"
         case mapView = "MapView"
         case lotties = "Lotties"
@@ -62,7 +62,7 @@ class HomeViewController: UIViewController {
     }
     
     // CONSTANTS
-    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiStackView, .uiSearchBar, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl, .uiDatePicker]
+    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiStackView, .uiPickerView, .uiSearchBar, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl]
     private let othersUIKitList: [MenuItems] = [.webView, .mapView, .lotties, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
     private let rowHeight: CGFloat = 40
     private let headerHeight: CGFloat = 35
@@ -200,8 +200,8 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = StepperViewController()
             case .uiSegmentedControl:
                 viewController = SegmentedControlViewController()
-            case .uiDatePicker:
-                viewController = DatePickerViewController()
+            case .uiPickerView:
+                viewController = PickerViewController()
             case .webView:
                 viewController = WebViewController()
             case .mapView:
