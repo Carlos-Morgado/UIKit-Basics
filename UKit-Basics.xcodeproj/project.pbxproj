@@ -37,6 +37,7 @@
 		C4415E7D29B4AE2F00303DDD /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4415E7B29B4AE2F00303DDD /* SwitchViewController.xib */; };
 		C4415E8029B4B5B900303DDD /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4415E7E29B4B5B900303DDD /* SliderViewController.swift */; };
 		C4415E8129B4B5B900303DDD /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4415E7F29B4B5B900303DDD /* SliderViewController.xib */; };
+		C446F5272A23A89400024231 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C446F5292A23A89400024231 /* Localizable.strings */; };
 		C447AC0529B220B100D84B37 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447AC0329B220B100D84B37 /* TextViewController.swift */; };
 		C447AC0629B220B100D84B37 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C447AC0429B220B100D84B37 /* TextViewController.xib */; };
 		C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */; };
@@ -124,6 +125,8 @@
 		C4415E7B29B4AE2F00303DDD /* SwitchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
 		C4415E7E29B4B5B900303DDD /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		C4415E7F29B4B5B900303DDD /* SliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
+		C446F5282A23A89400024231 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C446F52A2A23A8C600024231 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C447AC0329B220B100D84B37 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		C447AC0429B220B100D84B37 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Settings.swift"; sourceTree = "<group>"; };
@@ -193,6 +196,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C446F5242A23A87700024231 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C446F5292A23A89400024231 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C4C48A0C29B6048C0045874B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +272,7 @@
 		C4F136C129ADF2540020385C /* UIKit-Basics */ = {
 			isa = PBXGroup;
 			children = (
+				C446F5242A23A87700024231 /* Resources */,
 				C4F136C229ADF2540020385C /* AppDelegate.swift */,
 				C4F136D829ADF7290020385C /* View */,
 				C4F136D729ADF7210020385C /* Controller */,
@@ -391,6 +403,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = C4F136B629ADF2540020385C;
 			productRefGroup = C4F136C029ADF2540020385C /* Products */;
@@ -424,6 +437,7 @@
 				C4988BAC29EDA474006A2B5D /* SF-Mono-Heavy.otf in Resources */,
 				C4E624FB29E45E2400D75B83 /* StackViewController.xib in Resources */,
 				C4415E7D29B4AE2F00303DDD /* SwitchViewController.xib in Resources */,
+				C446F5272A23A89400024231 /* Localizable.strings in Resources */,
 				C4E9CBA129D1F5C10024B84A /* ExamplesViewController.xib in Resources */,
 				C4C48A0029B6047F0045874B /* SF-UI-Display-Ultralight.otf in Resources */,
 				C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */,
@@ -507,6 +521,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		C446F5292A23A89400024231 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C446F5282A23A89400024231 /* en */,
+				C446F52A2A23A8C600024231 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C4F136CD29ADF2550020385C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -522,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -582,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

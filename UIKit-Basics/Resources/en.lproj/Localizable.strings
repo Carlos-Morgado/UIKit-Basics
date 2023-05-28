@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  UKit-Basics
+
+  Created by Carlos Morgado on 28/5/23.
+  
+*/
+
+"hello_title" = "Hello";
+"hello_subtitle" = "Welcome";
