@@ -26,15 +26,11 @@ class PageControlsViewController: UIViewController {
         super.viewDidLoad()
         
         configView()
-       
-        
     }
     
     // ACTIONS
 
-    @IBAction func pageControlAction(_ sender: Any) {
-        pickerViewExample.selectRow(pageControlExample.currentPage, inComponent: 0, animated: true)
-    }
+    
 }
 
 
@@ -72,6 +68,10 @@ private extension PageControlsViewController {
         pageControlsDefinition.numberOfLines = 0
         pageControlsDefinition.setLineSpacing(lineSpacing: 2.5)
     }
+    
+    @IBAction func pageControlAction(_ sender: Any) {
+        pickerViewExample.selectRow(pageControlExample.currentPage, inComponent: 0, animated: true)
+    }
 }
 
 // MARK: - PICKERVIEW DATASOURCE EXTENSION
@@ -88,8 +88,6 @@ extension PageControlsViewController: UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerViewItems[row]
     }
-    
-    
 }
 
 // MARK: - PICKERVIEW DELEGATE EXTENSION
