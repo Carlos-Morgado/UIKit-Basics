@@ -258,8 +258,7 @@ private extension HomeViewController {
     func configMainTitle() {
         mainTitleView.backgroundColor = .clear
         uiKitLogo.image = UIImage(named: "uikit-logo-png-transparent")
-//        mainTitle.text = "UIKit Basics"
-        mainTitle.text = NSLocalizedString("hello_title", comment: "")
+        mainTitle.text = "UIKit Basics"
         mainTitle.textAlignment = .left
         mainTitle.font = UIFont(name: "SFUIDisplay-Bold", size: 30)
         mainTitle.textColor = .textColor
