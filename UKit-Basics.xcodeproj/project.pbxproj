@@ -31,6 +31,8 @@
 		C43A3B5729F6C24E0098F20F /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43A3B5529F6C24E0098F20F /* MapViewController.xib */; };
 		C43A3B5A29F6C3E90098F20F /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A3B5829F6C3E90098F20F /* SearchBarViewController.swift */; };
 		C43A3B5B29F6C3E90098F20F /* SearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43A3B5929F6C3E90098F20F /* SearchBarViewController.xib */; };
+		C43F92642A1FA128009B2078 /* PageControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F92622A1FA128009B2078 /* PageControlsViewController.swift */; };
+		C43F92652A1FA128009B2078 /* PageControlsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43F92632A1FA128009B2078 /* PageControlsViewController.xib */; };
 		C4415E7829B4A8D100303DDD /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4415E7629B4A8D100303DDD /* ImageViewController.swift */; };
 		C4415E7929B4A8D100303DDD /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4415E7729B4A8D100303DDD /* ImageViewController.xib */; };
 		C4415E7C29B4AE2F00303DDD /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4415E7A29B4AE2F00303DDD /* SwitchViewController.swift */; };
@@ -118,6 +120,8 @@
 		C43A3B5529F6C24E0098F20F /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		C43A3B5829F6C3E90098F20F /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		C43A3B5929F6C3E90098F20F /* SearchBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarViewController.xib; sourceTree = "<group>"; };
+		C43F92622A1FA128009B2078 /* PageControlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlsViewController.swift; sourceTree = "<group>"; };
+		C43F92632A1FA128009B2078 /* PageControlsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageControlsViewController.xib; sourceTree = "<group>"; };
 		C4415E7629B4A8D100303DDD /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		C4415E7729B4A8D100303DDD /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		C4415E7A29B4AE2F00303DDD /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 				C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */,
 				C4B75DEC29B4BEAF00DCCD3F /* SegmentedControlViewController.swift */,
 				C4B75DF029B4C22300DCCD3F /* PickerViewController.swift */,
+				C43F92622A1FA128009B2078 /* PageControlsViewController.swift */,
 				C43A3B5029F6BF5C0098F20F /* WebViewController.swift */,
 				C43A3B5429F6C24E0098F20F /* MapViewController.swift */,
 				C431930129C9C17B00C3D764 /* LottiesViewController.swift */,
@@ -298,7 +303,6 @@
 				C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */,
 				C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */,
 				C43A3B5829F6C3E90098F20F /* SearchBarViewController.swift */,
-				C43A3B5929F6C3E90098F20F /* SearchBarViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +322,7 @@
 				C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */,
 				C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */,
 				C4B75DF129B4C22300DCCD3F /* PickerViewController.xib */,
+				C43F92632A1FA128009B2078 /* PageControlsViewController.xib */,
 				C43A3B5129F6BF5C0098F20F /* WebViewController.xib */,
 				C43A3B5529F6C24E0098F20F /* MapViewController.xib */,
 				C431930229C9C17B00C3D764 /* LottiesViewController.xib */,
@@ -329,6 +334,7 @@
 				C414744E29DAFC6E00224FEC /* appleDeveloperViewController.xib */,
 				C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */,
 				C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */,
+				C43A3B5929F6C3E90098F20F /* SearchBarViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				C4988BAA29EDA474006A2B5D /* SF-Mono-MediumItalic.otf in Resources */,
 				C4415E7929B4A8D100303DDD /* ImageViewController.xib in Resources */,
 				C4C489FE29B6047F0045874B /* SF-UI-Text-RegularItalic.otf in Resources */,
+				C43F92652A1FA128009B2078 /* PageControlsViewController.xib in Resources */,
 				C4988BB229EDA474006A2B5D /* SF-Mono-Semibold.otf in Resources */,
 				C4F136E129ADF90D0020385C /* HomeViewController.xib in Resources */,
 				C431930829C9C36300C3D764 /* LightDarkViewController.xib in Resources */,
@@ -476,6 +483,7 @@
 				C431930729C9C36300C3D764 /* LightDarkViewController.swift in Sources */,
 				C414744F29DAFC6E00224FEC /* appleDeveloperViewController.swift in Sources */,
 				C4F75B2D29AFA2F90019EFB0 /* ButtonsViewController.swift in Sources */,
+				C43F92642A1FA128009B2078 /* PageControlsViewController.swift in Sources */,
 				C451E2D329DC1CF3008E5897 /* InstallFontsViewController.swift in Sources */,
 				C41F1C8729B75CBE00DA50E3 /* MyCustomTableViewCell.swift in Sources */,
 				C4B75DEE29B4BEAF00DCCD3F /* SegmentedControlViewController.swift in Sources */,
