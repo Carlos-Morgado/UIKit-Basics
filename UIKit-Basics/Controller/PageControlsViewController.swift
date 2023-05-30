@@ -62,7 +62,7 @@ private extension PageControlsViewController {
     }
     
     func configPageControlsDefinition() {
-        pageControlsDefinition.text = "A page control displays a row of indicator images, each of which represents a page in a flat list."
+        pageControlsDefinition.text = NSLocalizedString("page_control_definition", comment: "")
         pageControlsDefinition.font = UIFont(name: "SFUIDisplay-Light", size: 18)
         pageControlsDefinition.textColor = .textColor
         pageControlsDefinition.numberOfLines = 0

@@ -6,5 +6,5 @@
   
 */
 
-"hello_title" = "Hello";
-"hello_subtitle" = "Welcome";
+"page_control_definition" = "A page control displays a row of indicator images, each of which represents a page in a flat list.";
+

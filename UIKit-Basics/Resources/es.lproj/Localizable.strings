@@ -6,5 +6,4 @@
   
 */
 
-"hello_title" = "Hola";
-"hello_subtitle" = "Bienvenido";
+"page_control_definition" = "Un page control muestra una fila de imágenes indicadoras, cada una de las cuales representa una página de una lista plana.";
