@@ -63,7 +63,7 @@ class HomeViewController: UIViewController {
     }
     
     // CONSTANTS
-    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiStackView, .uiPickerView, .pageControls, .uiSearchBar, .uiSwitch, .uiSlider, .uiStepper, .uiSegmentedControl]
+    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiStackView, .uiPickerView, .pageControls, .uiSegmentedControl, .uiSlider, .uiStepper, .uiSwitch, .uiSearchBar]
     private let othersUIKitList: [MenuItems] = [.webView, .mapView, .lotties, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
     private let rowHeight: CGFloat = 40
     private let headerHeight: CGFloat = 35
