@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderViewController" customModule="UKit_Basics" customModuleProvider="target">
             <connections>
                 <outlet property="generalContentView" destination="AG3-gh-oi0" id="aPh-AW-Uy1"/>
+                <outlet property="segmentedControlExample" destination="d6q-SZ-2iT" id="AB0-Jm-ncp"/>
+                <outlet property="sliderExample" destination="vhD-Cx-J8j" id="9kt-G4-ZOC"/>
                 <outlet property="sliderMainTitle" destination="waa-Tz-Ae4" id="FQ2-vf-rfz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,7 +27,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AG3-gh-oi0" userLabel="General Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="591"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider main title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waa-Tz-Ae4">
                                     <rect key="frame" x="30" y="40" width="333" height="40"/>
@@ -36,12 +38,35 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d6q-SZ-2iT" userLabel="Segmented Control Example">
+                                    <rect key="frame" x="30" y="110" width="333" height="32"/>
+                                    <segments>
+                                        <segment title="First"/>
+                                        <segment title="Second"/>
+                                    </segments>
+                                    <color key="tintColor" red="0.99607843139999996" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="segmentedControlExample:" destination="-1" eventType="valueChanged" id="Xc7-6h-Hto"/>
+                                    </connections>
+                                </segmentedControl>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vhD-Cx-J8j">
+                                    <rect key="frame" x="28" y="161" width="337" height="31"/>
+                                    <connections>
+                                        <action selector="sliderExampleAction:" destination="-1" eventType="valueChanged" id="ssI-QK-Ayq"/>
+                                    </connections>
+                                </slider>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
+                                <constraint firstAttribute="trailing" secondItem="vhD-Cx-J8j" secondAttribute="trailing" constant="30" id="22b-1M-kxy"/>
                                 <constraint firstAttribute="trailing" secondItem="waa-Tz-Ae4" secondAttribute="trailing" constant="30" id="2VU-go-vxs"/>
+                                <constraint firstItem="d6q-SZ-2iT" firstAttribute="top" secondItem="waa-Tz-Ae4" secondAttribute="bottom" constant="30" id="60F-8M-oBN"/>
+                                <constraint firstAttribute="trailing" secondItem="d6q-SZ-2iT" secondAttribute="trailing" constant="30" id="90w-dd-0KV"/>
+                                <constraint firstAttribute="bottom" secondItem="vhD-Cx-J8j" secondAttribute="bottom" constant="400" id="DmA-0d-P2X"/>
                                 <constraint firstItem="waa-Tz-Ae4" firstAttribute="top" secondItem="AG3-gh-oi0" secondAttribute="top" constant="40" id="Esp-tR-xpz"/>
-                                <constraint firstAttribute="bottom" secondItem="waa-Tz-Ae4" secondAttribute="bottom" constant="600" id="hQU-Ag-QVE"/>
+                                <constraint firstItem="vhD-Cx-J8j" firstAttribute="top" secondItem="d6q-SZ-2iT" secondAttribute="bottom" constant="20" id="Kba-Pr-qny"/>
+                                <constraint firstItem="d6q-SZ-2iT" firstAttribute="leading" secondItem="AG3-gh-oi0" secondAttribute="leading" constant="30" id="eZT-Oq-j7E"/>
+                                <constraint firstItem="vhD-Cx-J8j" firstAttribute="leading" secondItem="AG3-gh-oi0" secondAttribute="leading" constant="30" id="jaU-h6-kWQ"/>
                                 <constraint firstItem="waa-Tz-Ae4" firstAttribute="leading" secondItem="AG3-gh-oi0" secondAttribute="leading" constant="30" id="rI6-BO-XFq"/>
                             </constraints>
                         </view>
