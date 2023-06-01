@@ -12,6 +12,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepperViewController" customModule="UKit_Basics" customModuleProvider="target">
             <connections>
                 <outlet property="generalContentView" destination="qwf-yw-yGB" id="bja-om-xOo"/>
+                <outlet property="pickerViewExample" destination="epj-jO-h51" id="s8V-iH-mvT"/>
+                <outlet property="sliderExample" destination="bIf-0N-K3t" id="KML-c9-375"/>
+                <outlet property="stepperExample" destination="zHu-eu-eCe" id="Cah-uv-Ycm"/>
                 <outlet property="stepperMainTitle" destination="5yj-nB-MYa" id="EfD-Wn-35N"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,7 +28,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwf-yw-yGB" userLabel="General Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="848"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stepper Main Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yj-nB-MYa">
                                     <rect key="frame" x="30" y="40" width="333" height="40"/>
@@ -36,13 +39,33 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-eu-eCe">
+                                    <rect key="frame" x="149.66666666666666" y="110" width="94" height="32"/>
+                                    <connections>
+                                        <action selector="stepperExampleAction:" destination="-1" eventType="valueChanged" id="7Cn-5A-YYv"/>
+                                    </connections>
+                                </stepper>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-0N-K3t">
+                                    <rect key="frame" x="28" y="172" width="337" height="31"/>
+                                </slider>
+                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epj-jO-h51">
+                                    <rect key="frame" x="0.0" y="232" width="393" height="216"/>
+                                </pickerView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="5yj-nB-MYa" secondAttribute="bottom" constant="600" id="NQt-2b-oiM"/>
+                                <constraint firstItem="bIf-0N-K3t" firstAttribute="top" secondItem="zHu-eu-eCe" secondAttribute="bottom" constant="30" id="4du-LU-ajE"/>
+                                <constraint firstItem="zHu-eu-eCe" firstAttribute="centerX" secondItem="qwf-yw-yGB" secondAttribute="centerX" id="5Kj-5Z-Rb0"/>
+                                <constraint firstAttribute="trailing" secondItem="epj-jO-h51" secondAttribute="trailing" id="87G-Xh-4D5"/>
+                                <constraint firstItem="bIf-0N-K3t" firstAttribute="leading" secondItem="qwf-yw-yGB" secondAttribute="leading" constant="30" id="9hi-Yw-rS6"/>
+                                <constraint firstItem="zHu-eu-eCe" firstAttribute="top" secondItem="5yj-nB-MYa" secondAttribute="bottom" constant="30" id="9ke-an-AXh"/>
+                                <constraint firstAttribute="trailing" secondItem="bIf-0N-K3t" secondAttribute="trailing" constant="30" id="Ad8-zW-KvC"/>
+                                <constraint firstItem="epj-jO-h51" firstAttribute="leading" secondItem="qwf-yw-yGB" secondAttribute="leading" id="HlK-Dg-8bv"/>
+                                <constraint firstAttribute="bottom" secondItem="epj-jO-h51" secondAttribute="bottom" constant="400" id="Mjh-nj-i5k"/>
                                 <constraint firstItem="5yj-nB-MYa" firstAttribute="top" secondItem="qwf-yw-yGB" secondAttribute="top" constant="40" id="ZFB-eq-9cE"/>
                                 <constraint firstAttribute="trailing" secondItem="5yj-nB-MYa" secondAttribute="trailing" constant="30" id="i9P-ee-Mdg"/>
                                 <constraint firstItem="5yj-nB-MYa" firstAttribute="leading" secondItem="qwf-yw-yGB" secondAttribute="leading" constant="30" id="kEt-Bf-wGd"/>
+                                <constraint firstItem="epj-jO-h51" firstAttribute="top" secondItem="bIf-0N-K3t" secondAttribute="bottom" constant="30" id="rnc-Vc-Uqs"/>
                             </constraints>
                         </view>
                     </subviews>
