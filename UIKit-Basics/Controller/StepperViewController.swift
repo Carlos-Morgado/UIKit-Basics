@@ -28,7 +28,6 @@ class StepperViewController: UIViewController {
     
   // ACTIONS
    
-    
 }
 
 
@@ -47,7 +46,6 @@ private extension StepperViewController {
         configSliderExample()
         
         configPickerViewExample()
-        
     }
     
     func configStepperMainTitle() {
@@ -104,9 +102,5 @@ extension StepperViewController: UIPickerViewDataSource {
 extension StepperViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 35
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
     }
 }
