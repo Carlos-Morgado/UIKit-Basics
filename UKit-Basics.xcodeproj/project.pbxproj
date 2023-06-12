@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73898A3A84C83E7A324B35F1 /* Pods_UKit_Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49876274240A0F2C2381DC3D /* Pods_UKit_Basics.framework */; };
 		C414744F29DAFC6E00224FEC /* appleDeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414744D29DAFC6E00224FEC /* appleDeveloperViewController.swift */; };
 		C414745029DAFC6E00224FEC /* appleDeveloperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C414744E29DAFC6E00224FEC /* appleDeveloperViewController.xib */; };
 		C41EB87729D2E52D00160416 /* Images+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EB87629D2E52D00160416 /* Images+Settings.swift */; };
@@ -65,6 +66,8 @@
 		C4B75DEF29B4BEAF00DCCD3F /* SegmentedControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */; };
 		C4B75DF229B4C22300DCCD3F /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B75DF029B4C22300DCCD3F /* PickerViewController.swift */; };
 		C4B75DF329B4C22300DCCD3F /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B75DF129B4C22300DCCD3F /* PickerViewController.xib */; };
+		C4BB2F602A3759B800E8FF70 /* 93257-battery.json in Resources */ = {isa = PBXBuildFile; fileRef = C4BB2F5E2A3759B800E8FF70 /* 93257-battery.json */; };
+		C4BB2F612A3759B800E8FF70 /* 146062-nike-logo-aimation-backround-white.json in Resources */ = {isa = PBXBuildFile; fileRef = C4BB2F5F2A3759B800E8FF70 /* 146062-nike-logo-aimation-backround-white.json */; };
 		C4C4627129DD6BA40050CCB6 /* UITextView+Hyperlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */; };
 		C4C489FD29B6047F0045874B /* SF-Compact-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489EE29B6047E0045874B /* SF-Compact-Text-Semibold.otf */; };
 		C4C489FE29B6047F0045874B /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4C489EF29B6047E0045874B /* SF-UI-Text-RegularItalic.otf */; };
@@ -97,6 +100,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		188F33E05E016B1C628E828C /* Pods-UKit-Basics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UKit-Basics.debug.xcconfig"; path = "Target Support Files/Pods-UKit-Basics/Pods-UKit-Basics.debug.xcconfig"; sourceTree = "<group>"; };
+		37CAA9872773B4E986F8F913 /* Pods-UKit-Basics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UKit-Basics.release.xcconfig"; path = "Target Support Files/Pods-UKit-Basics/Pods-UKit-Basics.release.xcconfig"; sourceTree = "<group>"; };
+		49876274240A0F2C2381DC3D /* Pods_UKit_Basics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UKit_Basics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C414744D29DAFC6E00224FEC /* appleDeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleDeveloperViewController.swift; sourceTree = "<group>"; };
 		C414744E29DAFC6E00224FEC /* appleDeveloperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = appleDeveloperViewController.xib; sourceTree = "<group>"; };
 		C41EB87629D2E52D00160416 /* Images+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images+Settings.swift"; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 		C4B75DED29B4BEAF00DCCD3F /* SegmentedControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlViewController.xib; sourceTree = "<group>"; };
 		C4B75DF029B4C22300DCCD3F /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		C4B75DF129B4C22300DCCD3F /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		C4BB2F5E2A3759B800E8FF70 /* 93257-battery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "93257-battery.json"; sourceTree = "<group>"; };
+		C4BB2F5F2A3759B800E8FF70 /* 146062-nike-logo-aimation-backround-white.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "146062-nike-logo-aimation-backround-white.json"; sourceTree = "<group>"; };
 		C4C4627029DD6BA40050CCB6 /* UITextView+Hyperlink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Hyperlink.swift"; sourceTree = "<group>"; };
 		C4C489EE29B6047E0045874B /* SF-Compact-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Semibold.otf"; sourceTree = "<group>"; };
 		C4C489EF29B6047E0045874B /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
@@ -194,18 +202,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73898A3A84C83E7A324B35F1 /* Pods_UKit_Basics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1228ED0F23858BC70E56DF80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				188F33E05E016B1C628E828C /* Pods-UKit-Basics.debug.xcconfig */,
+				37CAA9872773B4E986F8F913 /* Pods-UKit-Basics.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C446F5242A23A87700024231 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4BB2F5D2A37599D00E8FF70 /* Lotties */,
 				C446F5292A23A89400024231 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4BB2F5D2A37599D00E8FF70 /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				C4BB2F5E2A3759B800E8FF70 /* 93257-battery.json */,
+				C4BB2F5F2A3759B800E8FF70 /* 146062-nike-logo-aimation-backround-white.json */,
+			);
+			path = Lotties;
 			sourceTree = "<group>";
 		};
 		C4C48A0C29B6048C0045874B /* Fonts */ = {
@@ -262,6 +290,8 @@
 			children = (
 				C4F136C129ADF2540020385C /* UIKit-Basics */,
 				C4F136C029ADF2540020385C /* Products */,
+				1228ED0F23858BC70E56DF80 /* Pods */,
+				FF55A6B257FC831F4CC87462 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,9 +333,9 @@
 				C4415E7E29B4B5B900303DDD /* SliderViewController.swift */,
 				C4B75DE829B4BD3C00DCCD3F /* StepperViewController.swift */,
 				C4415E7A29B4AE2F00303DDD /* SwitchViewController.swift */,
+				C431930129C9C17B00C3D764 /* LottiesViewController.swift */,
 				C43A3B5029F6BF5C0098F20F /* WebViewController.swift */,
 				C43A3B5429F6C24E0098F20F /* MapViewController.swift */,
-				C431930129C9C17B00C3D764 /* LottiesViewController.swift */,
 				C431930529C9C36300C3D764 /* LightDarkViewController.swift */,
 				C431930D29C9C42D00C3D764 /* CalendarViewController.swift */,
 				C431930929C9C3DB00C3D764 /* Video&MusicViewController.swift */,
@@ -335,9 +365,9 @@
 				C4415E7F29B4B5B900303DDD /* SliderViewController.xib */,
 				C4B75DE929B4BD3C00DCCD3F /* StepperViewController.xib */,
 				C4415E7B29B4AE2F00303DDD /* SwitchViewController.xib */,
+				C431930229C9C17B00C3D764 /* LottiesViewController.xib */,
 				C43A3B5129F6BF5C0098F20F /* WebViewController.xib */,
 				C43A3B5529F6C24E0098F20F /* MapViewController.xib */,
-				C431930229C9C17B00C3D764 /* LottiesViewController.xib */,
 				C431930629C9C36300C3D764 /* LightDarkViewController.xib */,
 				C431930E29C9C42D00C3D764 /* CalendarViewController.xib */,
 				C431930A29C9C3DB00C3D764 /* Video&MusicViewController.xib */,
@@ -367,6 +397,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FF55A6B257FC831F4CC87462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49876274240A0F2C2381DC3D /* Pods_UKit_Basics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,9 +412,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4F136D329ADF2550020385C /* Build configuration list for PBXNativeTarget "UKit-Basics" */;
 			buildPhases = (
+				B397352D82F7E770CE2FDD1A /* [CP] Check Pods Manifest.lock */,
 				C4F136BB29ADF2540020385C /* Sources */,
 				C4F136BC29ADF2540020385C /* Frameworks */,
 				C4F136BD29ADF2540020385C /* Resources */,
+				946E372EAFD0F2B01AE4FCB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -456,9 +496,11 @@
 				C447AC0629B220B100D84B37 /* TextViewController.xib in Resources */,
 				C4988BAA29EDA474006A2B5D /* SF-Mono-MediumItalic.otf in Resources */,
 				C4415E7929B4A8D100303DDD /* ImageViewController.xib in Resources */,
+				C4BB2F612A3759B800E8FF70 /* 146062-nike-logo-aimation-backround-white.json in Resources */,
 				C4C489FE29B6047F0045874B /* SF-UI-Text-RegularItalic.otf in Resources */,
 				C43F92652A1FA128009B2078 /* PageControlsViewController.xib in Resources */,
 				C4988BB229EDA474006A2B5D /* SF-Mono-Semibold.otf in Resources */,
+				C4BB2F602A3759B800E8FF70 /* 93257-battery.json in Resources */,
 				C4F136E129ADF90D0020385C /* HomeViewController.xib in Resources */,
 				C431930829C9C36300C3D764 /* LightDarkViewController.xib in Resources */,
 				C451E2D429DC1CF3008E5897 /* InstallFontsViewController.xib in Resources */,
@@ -484,6 +526,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		946E372EAFD0F2B01AE4FCB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UKit-Basics/Pods-UKit-Basics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UKit-Basics/Pods-UKit-Basics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UKit-Basics/Pods-UKit-Basics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B397352D82F7E770CE2FDD1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UKit-Basics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4F136BB29ADF2540020385C /* Sources */ = {
@@ -667,6 +751,7 @@
 		};
 		C4F136D429ADF2550020385C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188F33E05E016B1C628E828C /* Pods-UKit-Basics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -695,6 +780,7 @@
 		};
 		C4F136D529ADF2550020385C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37CAA9872773B4E986F8F913 /* Pods-UKit-Basics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
