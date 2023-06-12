@@ -6,13 +6,15 @@
 //
 
 import UIKit
+import Lottie
 
 class LottiesViewController: UIViewController {
 
     // OUTLETS
     @IBOutlet weak private var lottiesMainTitle: UILabel!
     @IBOutlet weak private var generalContentView: UIView!
-    @IBOutlet weak private var swiftPackageMainTitle: UILabel!
+    @IBOutlet weak private var cocoaPodsMainTitle: UILabel!
+    @IBOutlet weak private var lottieExample: LottieAnimationView!
     
     // LIFE CYCLE
     override func viewDidLoad() {
@@ -35,7 +37,10 @@ private extension LottiesViewController {
         
         configLottiesMainTitle()
     
-        configSwiftPackageMainTitle()
+        configCocoaPodsMainTitle()
+        
+        configLottieExample()
+        
     }
     
     func configLottiesMainTitle() {
@@ -45,11 +50,19 @@ private extension LottiesViewController {
         lottiesMainTitle.textColor = .textColor
     }
     
-    func configSwiftPackageMainTitle() {
-        swiftPackageMainTitle.text = "With Swift Package Manager"
-        swiftPackageMainTitle.textAlignment = .left
-        swiftPackageMainTitle.font = UIFont(name: "SFUIDisplay-Regular", size: 20)
-        swiftPackageMainTitle.textColor = .textColor
+    func configCocoaPodsMainTitle() {
+        cocoaPodsMainTitle.text = "With Cocoa Pods"
+        cocoaPodsMainTitle.textAlignment = .left
+        cocoaPodsMainTitle.font = UIFont(name: "SFUIDisplay-Regular", size: 20)
+        cocoaPodsMainTitle.textColor = .textColor
+    }
+    
+    func configLottieExample() {
+        lottieExample.animation = LottieAnimation.named("93257-battery")
+        lottieExample.contentMode = .scaleAspectFit
+        lottieExample.loopMode = .loop
+        lottieExample.animationSpeed = 0.5
+        lottieExample.play()
     }
 }
 
