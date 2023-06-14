@@ -6,24 +6,50 @@
 //
 
 import UIKit
+import MapKit
 
 class MapViewController: UIViewController {
 
+    // OUTLETS
+    @IBOutlet weak private var generalContentView: UIView!
+    @IBOutlet weak private var mapViewMainTitle: UILabel!
+    @IBOutlet weak private var mapViewExample: MKMapView!
+    
+    // LIFE CYCLE
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configView()
     }
+}
 
+// MARK: - EXTENSION
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+private extension MapViewController {
+    func configView() {
+        title = "MapView"
+        view.backgroundColor = .basicBackgroundColor
+        generalContentView.backgroundColor = .basicBackgroundColor
+        
+        configMapViewMainTitle()
+        
+        configMapViewExample()
     }
-    */
-
+    
+    func configMapViewMainTitle() {
+        mapViewMainTitle.text = "MapView"
+        mapViewMainTitle.textAlignment = .left
+        mapViewMainTitle.font = UIFont(name: "SFUIDisplay-Bold", size: 35)
+        mapViewMainTitle.textColor = .textColor
+    }
+    
+    func configMapViewExample() {
+        mapViewExample.overrideUserInterfaceStyle = .dark
+        let latitude = 40.4165000
+        let longitude = -3.7025600
+        let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        mapViewExample.setRegion(region, animated: true)
+    }
 }

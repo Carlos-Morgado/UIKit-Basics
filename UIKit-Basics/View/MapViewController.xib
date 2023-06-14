@@ -1,22 +1,86 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="UKit_Basics" customModuleProvider="target">
             <connections>
+                <outlet property="generalContentView" destination="1nK-XP-EcK" id="dae-bo-3Sr"/>
+                <outlet property="mapViewExample" destination="vKj-pc-rMo" id="s7m-aY-UNc"/>
+                <outlet property="mapViewMainTitle" destination="hqy-Nq-RiR" id="sc3-V5-U7J"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWg-KT-2nH">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nK-XP-EcK" userLabel="General Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="910"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MapView Main Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-Nq-RiR">
+                                    <rect key="frame" x="30" y="40" width="333" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="KxF-GW-JOI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKj-pc-rMo">
+                                    <rect key="frame" x="0.0" y="110" width="393" height="400"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="400" id="cqO-Vr-fQp"/>
+                                    </constraints>
+                                    <standardMapConfiguration key="preferredConfiguration"/>
+                                </mapView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="hqy-Nq-RiR" secondAttribute="trailing" constant="30" id="4yC-Ue-MhU"/>
+                                <constraint firstItem="vKj-pc-rMo" firstAttribute="top" secondItem="hqy-Nq-RiR" secondAttribute="bottom" constant="30" id="7Lv-X1-VZE"/>
+                                <constraint firstItem="vKj-pc-rMo" firstAttribute="leading" secondItem="1nK-XP-EcK" secondAttribute="leading" id="YZc-b3-eVI"/>
+                                <constraint firstItem="hqy-Nq-RiR" firstAttribute="leading" secondItem="1nK-XP-EcK" secondAttribute="leading" constant="30" id="ZEw-I5-xUq"/>
+                                <constraint firstAttribute="trailing" secondItem="vKj-pc-rMo" secondAttribute="trailing" id="dOS-96-wde"/>
+                                <constraint firstAttribute="bottom" secondItem="vKj-pc-rMo" secondAttribute="bottom" constant="400" id="lU8-qk-13R"/>
+                                <constraint firstItem="hqy-Nq-RiR" firstAttribute="top" secondItem="1nK-XP-EcK" secondAttribute="top" constant="40" id="sZF-ga-k2k"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="1nK-XP-EcK" firstAttribute="top" secondItem="dWg-KT-2nH" secondAttribute="top" id="3Rm-gg-UzP"/>
+                        <constraint firstItem="1nK-XP-EcK" firstAttribute="leading" secondItem="dWg-KT-2nH" secondAttribute="leading" id="4sV-3g-eyE"/>
+                        <constraint firstItem="1nK-XP-EcK" firstAttribute="centerX" secondItem="dWg-KT-2nH" secondAttribute="centerX" id="F4G-Cn-EuK"/>
+                        <constraint firstAttribute="trailing" secondItem="1nK-XP-EcK" secondAttribute="trailing" id="Ndd-4G-6a9"/>
+                        <constraint firstAttribute="bottom" secondItem="1nK-XP-EcK" secondAttribute="bottom" id="naF-Nq-hH7"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dWg-KT-2nH" secondAttribute="trailing" id="Btf-YF-v36"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dWg-KT-2nH" secondAttribute="bottom" id="K8v-NS-KRN"/>
+                <constraint firstItem="dWg-KT-2nH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OJA-hZ-h1K"/>
+                <constraint firstItem="dWg-KT-2nH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zXi-c9-f8F"/>
+            </constraints>
+            <point key="canvasLocation" x="37" y="21"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
