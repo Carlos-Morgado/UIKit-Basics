@@ -87,6 +87,8 @@
 		C4E624FA29E45E2400D75B83 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E624F829E45E2400D75B83 /* StackViewController.swift */; };
 		C4E624FB29E45E2400D75B83 /* StackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E624F929E45E2400D75B83 /* StackViewController.xib */; };
 		C4E7A93329BA2A12001C39E7 /* UILabell+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7A93229BA2A12001C39E7 /* UILabell+LineSpacing.swift */; };
+		C4E7FF632A4041880017B882 /* AlertActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7FF612A4041880017B882 /* AlertActionViewController.swift */; };
+		C4E7FF642A4041880017B882 /* AlertActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E7FF622A4041880017B882 /* AlertActionViewController.xib */; };
 		C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CB9C29D17FD00024B84A /* UILabel+Color.swift */; };
 		C4E9CBA029D1F5C10024B84A /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CB9E29D1F5C10024B84A /* ExamplesViewController.swift */; };
 		C4E9CBA129D1F5C10024B84A /* ExamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E9CB9F29D1F5C10024B84A /* ExamplesViewController.xib */; };
@@ -183,6 +185,8 @@
 		C4E624F829E45E2400D75B83 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		C4E624F929E45E2400D75B83 /* StackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StackViewController.xib; sourceTree = "<group>"; };
 		C4E7A93229BA2A12001C39E7 /* UILabell+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabell+LineSpacing.swift"; sourceTree = "<group>"; };
+		C4E7FF612A4041880017B882 /* AlertActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionViewController.swift; sourceTree = "<group>"; };
+		C4E7FF622A4041880017B882 /* AlertActionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertActionViewController.xib; sourceTree = "<group>"; };
 		C4E9CB9C29D17FD00024B84A /* UILabel+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Color.swift"; sourceTree = "<group>"; };
 		C4E9CB9E29D1F5C10024B84A /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
 		C4E9CB9F29D1F5C10024B84A /* ExamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamplesViewController.xib; sourceTree = "<group>"; };
@@ -336,6 +340,7 @@
 				C431930129C9C17B00C3D764 /* LottiesViewController.swift */,
 				C43A3B5029F6BF5C0098F20F /* WebViewController.swift */,
 				C43A3B5429F6C24E0098F20F /* MapViewController.swift */,
+				C4E7FF612A4041880017B882 /* AlertActionViewController.swift */,
 				C431930529C9C36300C3D764 /* LightDarkViewController.swift */,
 				C431930D29C9C42D00C3D764 /* CalendarViewController.swift */,
 				C431930929C9C3DB00C3D764 /* Video&MusicViewController.swift */,
@@ -368,6 +373,7 @@
 				C431930229C9C17B00C3D764 /* LottiesViewController.xib */,
 				C43A3B5129F6BF5C0098F20F /* WebViewController.xib */,
 				C43A3B5529F6C24E0098F20F /* MapViewController.xib */,
+				C4E7FF622A4041880017B882 /* AlertActionViewController.xib */,
 				C431930629C9C36300C3D764 /* LightDarkViewController.xib */,
 				C431930E29C9C42D00C3D764 /* CalendarViewController.xib */,
 				C431930A29C9C3DB00C3D764 /* Video&MusicViewController.xib */,
@@ -494,6 +500,7 @@
 				C4C48A0729B6047F0045874B /* SF-UI-Text-Regular.otf in Resources */,
 				C4C48A0829B6047F0045874B /* SF-UI-Text-SemiboldItalic.otf in Resources */,
 				C447AC0629B220B100D84B37 /* TextViewController.xib in Resources */,
+				C4E7FF642A4041880017B882 /* AlertActionViewController.xib in Resources */,
 				C4988BAA29EDA474006A2B5D /* SF-Mono-MediumItalic.otf in Resources */,
 				C4415E7929B4A8D100303DDD /* ImageViewController.xib in Resources */,
 				C4BB2F612A3759B800E8FF70 /* 146062-nike-logo-aimation-backround-white.json in Resources */,
@@ -595,6 +602,7 @@
 				C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */,
 				C4E9CB9D29D17FD00024B84A /* UILabel+Color.swift in Sources */,
 				C41EB87729D2E52D00160416 /* Images+Settings.swift in Sources */,
+				C4E7FF632A4041880017B882 /* AlertActionViewController.swift in Sources */,
 				C4F136C329ADF2540020385C /* AppDelegate.swift in Sources */,
 				C4415E7829B4A8D100303DDD /* ImageViewController.swift in Sources */,
 				C4F136E029ADF90D0020385C /* HomeViewController.swift in Sources */,

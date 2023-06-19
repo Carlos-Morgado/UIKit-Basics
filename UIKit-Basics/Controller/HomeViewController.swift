@@ -55,6 +55,7 @@ class HomeViewController: UIViewController {
         case calendar = "Calendar"
         case videoAndMusic = "Video & Music"
         case carouselViews = "Carousel Pictures"
+        case alertAction = "Alert Action"
     
         // Tab Bar
         // Search Bar
@@ -64,7 +65,7 @@ class HomeViewController: UIViewController {
     
     // CONSTANTS
     private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiStackView, .uiPickerView, .pageControls, .uiSegmentedControl, .uiSlider, .uiStepper, .uiSwitch, .uiSearchBar]
-    private let othersUIKitList: [MenuItems] = [.lotties, .webView, .mapView, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
+    private let othersUIKitList: [MenuItems] = [.lotties, .webView, .mapView, .alertAction, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
     private let rowHeight: CGFloat = 40
     private let headerHeight: CGFloat = 35
     private let numberOfSections: Int = 2
@@ -211,6 +212,8 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = MapViewController()
             case .lotties:
                 viewController = LottiesViewController()
+            case .alertAction:
+                viewController = AlertActionViewController()
             case .lightDarkMode:
                 viewController = LightDarkViewController()
             case .calendar:
