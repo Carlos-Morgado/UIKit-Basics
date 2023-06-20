@@ -46,6 +46,10 @@
 		C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */; };
 		C451E2D329DC1CF3008E5897 /* InstallFontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */; };
 		C451E2D429DC1CF3008E5897 /* InstallFontsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */; };
+		C458AFD62A41D7D400A21815 /* UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458AFD42A41D7D400A21815 /* UICollectionViewController.swift */; };
+		C458AFD72A41D7D400A21815 /* UICollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C458AFD52A41D7D400A21815 /* UICollectionViewController.xib */; };
+		C458AFDA2A41E32A00A21815 /* CustomedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458AFD82A41E32A00A21815 /* CustomedCollectionViewCell.swift */; };
+		C458AFDB2A41E32A00A21815 /* CustomedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C458AFD92A41E32A00A21815 /* CustomedCollectionViewCell.xib */; };
 		C46B9BCD29E95A9F002592E6 /* UIButton+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46B9BCC29E95A9F002592E6 /* UIButton+Animations.swift */; };
 		C46F5A9C29E5536F00A9F835 /* UITextView+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */; };
 		C4988BA929EDA474006A2B5D /* SF-Mono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4988B9D29EDA474006A2B5D /* SF-Mono-Bold.otf */; };
@@ -144,6 +148,10 @@
 		C44AD47329C0B8CB00AC1210 /* Color+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Settings.swift"; sourceTree = "<group>"; };
 		C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallFontsViewController.swift; sourceTree = "<group>"; };
 		C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallFontsViewController.xib; sourceTree = "<group>"; };
+		C458AFD42A41D7D400A21815 /* UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewController.swift; sourceTree = "<group>"; };
+		C458AFD52A41D7D400A21815 /* UICollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICollectionViewController.xib; sourceTree = "<group>"; };
+		C458AFD82A41E32A00A21815 /* CustomedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomedCollectionViewCell.swift; sourceTree = "<group>"; };
+		C458AFD92A41E32A00A21815 /* CustomedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomedCollectionViewCell.xib; sourceTree = "<group>"; };
 		C46B9BCC29E95A9F002592E6 /* UIButton+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Animations.swift"; sourceTree = "<group>"; };
 		C46F5A9B29E5536F00A9F835 /* UITextView+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+LineSpacing.swift"; sourceTree = "<group>"; };
 		C4988B9D29EDA474006A2B5D /* SF-Mono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Bold.otf"; sourceTree = "<group>"; };
@@ -350,6 +358,8 @@
 				C451E2D129DC1CF3008E5897 /* InstallFontsViewController.swift */,
 				C41F1C8529B75CBE00DA50E3 /* MyCustomTableViewCell.swift */,
 				C43A3B5829F6C3E90098F20F /* SearchBarViewController.swift */,
+				C458AFD42A41D7D400A21815 /* UICollectionViewController.swift */,
+				C458AFD82A41E32A00A21815 /* CustomedCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,6 +393,8 @@
 				C451E2D229DC1CF3008E5897 /* InstallFontsViewController.xib */,
 				C41F1C8629B75CBE00DA50E3 /* MyCustomTableViewCell.xib */,
 				C43A3B5929F6C3E90098F20F /* SearchBarViewController.xib */,
+				C458AFD52A41D7D400A21815 /* UICollectionViewController.xib */,
+				C458AFD92A41E32A00A21815 /* CustomedCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,6 +506,7 @@
 				C4C48A0029B6047F0045874B /* SF-UI-Display-Ultralight.otf in Resources */,
 				C4B75DEB29B4BD3C00DCCD3F /* StepperViewController.xib in Resources */,
 				C4F136CC29ADF2550020385C /* Assets.xcassets in Resources */,
+				C458AFD72A41D7D400A21815 /* UICollectionViewController.xib in Resources */,
 				C4988BA929EDA474006A2B5D /* SF-Mono-Bold.otf in Resources */,
 				C4C48A0A29B6047F0045874B /* SF-Compact-Text-LightItalic.otf in Resources */,
 				C43A3B5329F6BF5C0098F20F /* WebViewController.xib in Resources */,
@@ -518,6 +531,7 @@
 				C4C48A0B29B6047F0045874B /* SF-Compact-Text-Regular.otf in Resources */,
 				C4988BB029EDA474006A2B5D /* SF-Mono-HeavyItalic.otf in Resources */,
 				C43A3B5729F6C24E0098F20F /* MapViewController.xib in Resources */,
+				C458AFDB2A41E32A00A21815 /* CustomedCollectionViewCell.xib in Resources */,
 				C4988BAD29EDA474006A2B5D /* SF-Mono-RegularItalic.otf in Resources */,
 				C431930429C9C17B00C3D764 /* LottiesViewController.xib in Resources */,
 				C4988BB329EDA474006A2B5D /* SF-Mono-LightItalic.otf in Resources */,
@@ -597,6 +611,7 @@
 				C42D3D4829AF550400964CC8 /* LabelsViewController.swift in Sources */,
 				C4C4627129DD6BA40050CCB6 /* UITextView+Hyperlink.swift in Sources */,
 				C46B9BCD29E95A9F002592E6 /* UIButton+Animations.swift in Sources */,
+				C458AFDA2A41E32A00A21815 /* CustomedCollectionViewCell.swift in Sources */,
 				C43A3B5629F6C24E0098F20F /* MapViewController.swift in Sources */,
 				C4B75DF229B4C22300DCCD3F /* PickerViewController.swift in Sources */,
 				C44AD47429C0B8CB00AC1210 /* Color+Settings.swift in Sources */,
@@ -612,6 +627,7 @@
 				C431931329C9C47300C3D764 /* CarouselsViewController.swift in Sources */,
 				C431930329C9C17B00C3D764 /* LottiesViewController.swift in Sources */,
 				C4415E7C29B4AE2F00303DDD /* SwitchViewController.swift in Sources */,
+				C458AFD62A41D7D400A21815 /* UICollectionViewController.swift in Sources */,
 				C4415E8029B4B5B900303DDD /* SliderViewController.swift in Sources */,
 				C4E624FA29E45E2400D75B83 /* StackViewController.swift in Sources */,
 				C46F5A9C29E5536F00A9F835 /* UITextView+LineSpacing.swift in Sources */,

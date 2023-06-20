@@ -48,24 +48,20 @@ class HomeViewController: UIViewController {
         case uiSegmentedControl = "UISegmentedControl"
         case uiPickerView = "UIPickerView"
         case pageControls = "PageControls"
-        case webView = "WebView"
-        case mapView = "MapView"
+        case webView = "UIWebView"
+        case mapView = "UIMapView"
         case lotties = "Lotties"
         case lightDarkMode = "Light/Dark Mode"
         case calendar = "Calendar"
         case videoAndMusic = "Video & Music"
         case carouselViews = "Carousel Pictures"
         case alertAction = "Alert Action"
-    
-        // Tab Bar
-        // Search Bar
-       
-        
+        case uiCollectionView = "UICollectionView"
     }
     
     // CONSTANTS
-    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiStackView, .uiPickerView, .pageControls, .uiSegmentedControl, .uiSlider, .uiStepper, .uiSwitch, .uiSearchBar]
-    private let othersUIKitList: [MenuItems] = [.lotties, .webView, .mapView, .alertAction, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
+    private let uiKitList: [MenuItems] = [.examples, .uiLabel, .uiButton, .uiTextView, .uiImage, .uiStackView, .uiPickerView, .pageControls, .uiSegmentedControl, .uiSlider, .uiStepper, .uiSwitch, .uiSearchBar, .webView, .mapView, .uiCollectionView]
+    private let othersUIKitList: [MenuItems] = [.lotties, .alertAction, .lightDarkMode, .calendar, .videoAndMusic, .carouselViews]
     private let rowHeight: CGFloat = 40
     private let headerHeight: CGFloat = 35
     private let numberOfSections: Int = 2
@@ -224,6 +220,8 @@ extension HomeViewController: UITableViewDelegate {
                 viewController = CarouselsViewController()
             case .examples:
                 viewController = ExamplesViewController()
+            case .uiCollectionView:
+                viewController = UICollectionViewController()
         }
         
         guard let viewController else { return }
